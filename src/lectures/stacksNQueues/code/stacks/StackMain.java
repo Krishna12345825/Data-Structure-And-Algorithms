@@ -6,13 +6,12 @@ public class StackMain {
         stacks.push(34);
         stacks.push(35);
         stacks.push(36);
-        stacks.push(37);
-        stacks.push(38);
-        System.out.println(stacks.pop());
-        System.out.println(stacks.pop());
-        System.out.println(stacks.pop());
-        System.out.println(stacks.pop());
-        System.out.println(stacks.pop());
+
+//        System.out.println(stacks.pop());
+//        System.out.println(stacks.pop());
+//        System.out.println(stacks.pop());
+//        System.out.println(stacks.pop());
+//        System.out.println(stacks.pop());
         // System.out.println(stacks.pop());
 
 

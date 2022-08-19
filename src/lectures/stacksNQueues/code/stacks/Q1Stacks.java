@@ -9,6 +9,7 @@ public class Q1Stacks {
         this(DEFAULT_SIZE);
     }
 
+
     public Q1Stacks(int size) {
         this.data = new int[size];
     }
