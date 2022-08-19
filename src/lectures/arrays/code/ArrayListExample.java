@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class ArrayListExample {
     public static void main(String[] args) {
+        System.out.println("Krishna");
         Scanner scanner = new Scanner(System.in);
         // Syntax
         ArrayList<Integer> list = new ArrayList<>(5);
