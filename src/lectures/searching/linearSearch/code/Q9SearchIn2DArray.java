@@ -1,6 +1,4 @@
-package lectures.linearSearch.code;
-
-import java.util.Arrays;
+package lectures.searching.linearSearch.code;
 
 public class Q9SearchIn2DArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lectures.linearSearch.code;
+package lectures.searching.linearSearch.code;
 
 public class Q8FindMax {
     public static void main(String[] args) {

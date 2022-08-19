@@ -1,4 +1,4 @@
-package lectures.linearSearch.code;
+package lectures.searching.linearSearch.code;
 
 public class Q7FindMin {
     public static void main(String[] args) {

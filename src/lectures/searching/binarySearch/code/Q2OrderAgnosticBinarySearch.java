@@ -1,4 +1,4 @@
-package lectures.binarySearch.code;
+package lectures.searching.binarySearch.code;
 
 public class Q2OrderAgnosticBinarySearch {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lectures.linearSearch.code;
+package lectures.searching.linearSearch.code;
 // https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 
 

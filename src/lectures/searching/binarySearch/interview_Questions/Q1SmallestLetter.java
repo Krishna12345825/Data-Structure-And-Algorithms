@@ -1,4 +1,4 @@
-package lectures.binarySearch.interview_Questions;
+package lectures.searching.binarySearch.interview_Questions;
 
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 public class Q1SmallestLetter {

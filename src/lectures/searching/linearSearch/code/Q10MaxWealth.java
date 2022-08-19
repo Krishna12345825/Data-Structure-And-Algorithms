@@ -1,4 +1,4 @@
-package lectures.linearSearch.code;
+package lectures.searching.linearSearch.code;
 
 // https://leetcode.com/problems/richest-customer-wealth/
 public class Q10MaxWealth {

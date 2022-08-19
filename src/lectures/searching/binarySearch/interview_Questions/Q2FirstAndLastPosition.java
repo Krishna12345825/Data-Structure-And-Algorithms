@@ -1,4 +1,4 @@
-package lectures.binarySearch.interview_Questions;
+package lectures.searching.binarySearch.interview_Questions;
 
 import java.util.Arrays;
 

@@ -1,6 +1,4 @@
-package lectures.linearSearch.code;
-
-import java.util.Arrays;
+package lectures.searching.linearSearch.code;
 
 public class Q4SearchInStrings1 {
     public static void main(String[] args) {

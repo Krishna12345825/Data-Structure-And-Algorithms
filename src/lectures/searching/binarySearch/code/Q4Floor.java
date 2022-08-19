@@ -1,16 +1,16 @@
-package lectures.binarySearch.code;
+package lectures.searching.binarySearch.code;
 
-public class Q1BinarySearch {
+public class Q4Floor {
+
     public static void main(String[] args) {
-        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-        int target = 18;
-        int ans = binarySearch(arr, target);
+        int[] arr = {2, 3, 5, 9, 14, 16, 18};
+        int target = 1;
+        int ans = floor(arr, target);
         System.out.println(ans);
     }
 
-    // return the index
-    // return -1 if it does not exist
-    static int binarySearch(int[] arr, int target) {
+    // return the index: greatest number <= target
+    static int floor(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -28,6 +28,7 @@ public class Q1BinarySearch {
                 return mid;
             }
         }
-        return -1;
+        return end;
     }
 }
+

@@ -1,21 +1,16 @@
-package lectures.binarySearch.code;
+package lectures.searching.binarySearch.code;
 
-public class Q3Ceiling {
-
+public class Q1BinarySearch {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 9, 14, 16, 18};
-        int target = 15;
-        int ans = ceiling(arr, target);
+        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
+        int target = 18;
+        int ans = binarySearch(arr, target);
         System.out.println(ans);
     }
 
-    // return the index of smallest no >= target
-    static int ceiling(int[] arr, int target) {
-
-        // but what if the target is greater than the greatest number in the array
-        if (target > arr[arr.length - 1]) {
-            return -1;
-        }
+    // return the index
+    // return -1 if it does not exist
+    static int binarySearch(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -33,6 +28,6 @@ public class Q3Ceiling {
                 return mid;
             }
         }
-        return start;
+        return -1;
     }
 }

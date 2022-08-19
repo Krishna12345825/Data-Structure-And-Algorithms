@@ -1,4 +1,4 @@
-package lectures.binarySearch.interview_Questions;
+package lectures.searching.binarySearch.interview_Questions;
 
 
 // https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
