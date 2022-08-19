@@ -3,14 +3,14 @@ package lectures.linkedList.code;
 
 public class Main {
     public static void main(String[] args) {
-      /*  Q1LinkedList q1LinkedList = new Q1LinkedList();
+        Q1LinkedList q1LinkedList = new Q1LinkedList();
         // insert first elements
         q1LinkedList.insertFirst(12);
         q1LinkedList.insertFirst(13);
         q1LinkedList.insertFirst(14);
         q1LinkedList.insertFirst(15);
         q1LinkedList.insertFirst(17);
-// insert last elements
+        // insert last elements
         q1LinkedList.insertLast(99);
         q1LinkedList.insertLast(100);
 
@@ -22,15 +22,16 @@ public class Main {
         // delete first Element
         System.out.println(q1LinkedList.deleteFirst());
         q1LinkedList.display();
-        // delete last elements
-        System.out.println(q1LinkedList.deleteLast());
-        // display the elements
-        q1LinkedList.display();
-        System.out.println(q1LinkedList.delete(3));
+//        // delete last elements
+//        System.out.println(q1LinkedList.deleteLast());
+//        // display the elements
+//        q1LinkedList.display();
+//        System.out.println(q1LinkedList.delete(3));
+//        q1LinkedList.display();
+        q1LinkedList.insertRec(18999999, 2);
         q1LinkedList.display();
 
 
-        */
 
 
 
@@ -53,7 +54,7 @@ public class Main {
         */
 
 
-        Q3CircularLinkedList linkedList = new Q3CircularLinkedList();
+     /*   Q3CircularLinkedList linkedList = new Q3CircularLinkedList();
         linkedList.insert(12);
         linkedList.insert(123);
         linkedList.insert(124);
@@ -62,7 +63,7 @@ public class Main {
 
 
         linkedList.delete(126);
-        linkedList.display();
+        linkedList.display();*/
 
     }
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Q4CyclicSort {
     public static void main(String[] args) {
-        int arr[] = {4, 6, 3, 2, 1, 5};
+        int arr[] = {4, 6, 3, 2,1, 5};
         cyclic(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -20,7 +20,6 @@ public class Q4CyclicSort {
             }
         }
     }
-
 
     public static void swapp(int arr[], int start, int end) {
         int temp = arr[start];

@@ -85,13 +85,13 @@ public class Q1LinkedList {
 
     // delete the first Elements
     public int deleteFirst() {
-        int val = head.value;
+        int temp = head.value;
         head = head.next;
         if (head == null) {
             tail = null;
         }
         size--;
-        return val;
+        return temp;
     }
 
     // It will return the referenced pointer to that node
@@ -156,6 +156,98 @@ public class Q1LinkedList {
         if (node.next != null) {
             node.next.prev = node;
         }
+    }
+
+
+    // Q-01: Recursive Insertion in LinkedList
+    public void insertRec(int val, int index) {
+        head = insertRec(val, index, head);
+    }
+
+    private Node insertRec(int val, int index, Node node) {
+        if (index == 0) {
+            Node temp = new Node(val, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(val, index - 1, node.next);
+        return node;
+    }
+
+
+    // Q-02: Remove Duplicates from Sorted LinkedList
+    // https://leetcode.com/problems/remove-duplicates-from-sorted-list
+    public void duplicates() {
+        Node node = head;
+        while (node.next != null) {
+            if (node.value == node.next.value) {
+                node.next = node.next.next;
+                size--;
+            } else {
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+    }
+
+
+
+    // Q-03: Merge Two Sorted LinkedLists
+    //https://leetcode.com/problems/merge-two-sorted-lists/
+ public static Q1LinkedList merge(Q1LinkedList first, Q1LinkedList second){
+        Node f= first.head;
+        Node s= second.head;
+        Q1LinkedList ans= new Q1LinkedList();
+        while (f!=null && s!=null){
+            if (f.value<s.value){
+                ans.insertLast(f.value);
+                f=f.next;
+            }else {
+                ans.insertLast(s.value);
+                s=s.next;
+            }
+        }
+        while (f!=null){
+            ans.insertLast(f.value);
+            f=f.next;
+        }
+        while (s!=null){
+            ans.insertLast(s.value);
+            s=s.next;
+        }
+        return ans;
+ }
+
+    public static void main(String[] args) {
+      /*  Q1LinkedList list = new Q1LinkedList();
+        list.insertFirst(1);
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(2);
+        list.insertFirst(3);
+        list.insertFirst(3);
+        list.insertFirst(3);
+        list.insertFirst(3);
+        list.display();
+        list.duplicates();
+        list.display();*/
+
+        // Q-03: Merge Two Sorted LinkedLists
+        Q1LinkedList first= new Q1LinkedList();
+        Q1LinkedList second= new Q1LinkedList();
+        first.insertLast(1);
+        first.insertLast(3);
+        first.insertLast(5);
+
+        second.insertLast(1);
+        second.insertLast(2);
+        second.insertLast(9);
+        second.insertLast(14);
+
+        Q1LinkedList ans= Q1LinkedList.merge(first,second);
+        ans.display();
+
     }
 
 
