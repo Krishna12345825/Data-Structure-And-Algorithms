@@ -16,8 +16,8 @@ public class Q4 {
             for (int j = 1; j <= 5; j++) {
                 if (j <= i) {
                     System.out.print(k);
+                    k++;
                 }
-                k++;
                 System.out.print(" ");
             }
             System.out.println();

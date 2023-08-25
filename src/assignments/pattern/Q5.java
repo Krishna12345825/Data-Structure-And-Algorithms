@@ -1,4 +1,4 @@
-package assignments.patterns.code;
+package assignments.pattern;
 
 
 /*

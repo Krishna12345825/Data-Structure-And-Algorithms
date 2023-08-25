@@ -1,21 +1,20 @@
-package assignments.patterns.code;
+package assignments.pattern;
 
 /*
-7.
-        *****
-         ****
-          ***
-           **
+6.
             *
+           **
+          ***
+         ****
+        *****
 
 */
 
-
-public class Q7 {
+public class Q6 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5; j++) {
-                if (j >= i) {
+                if (j >= 6 - i) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
