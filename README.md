@@ -15,3 +15,7 @@ Basic to Advance Data Structures
 - 9
 
 
+# Strings  Questions
+Basics
+- 1 [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)
+
