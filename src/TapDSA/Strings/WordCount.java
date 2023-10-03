@@ -1,5 +1,5 @@
 package TapDSA.Strings;
-// Word Count
+// Word Count program
 public class WordCount {
     public static void main(String[] args) {
         String str="How are you ";
