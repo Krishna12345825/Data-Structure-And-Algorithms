@@ -21,4 +21,5 @@ Basics
 - 2 [Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - 3 [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/description/)
 - 4 [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/description/)
+- 5 [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
 
