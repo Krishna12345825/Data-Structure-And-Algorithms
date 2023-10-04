@@ -28,3 +28,29 @@ The words in s are separated by a single space.
 */
 
 
+class Solution {
+    public String sortSentence(String s) {
+     String[] words = s.split(" ");
+    String[] result = new String[words.length];
+
+    for (String word : words) {
+        int position = Character.getNumericValue(word.charAt(word.length() - 1));
+        // Extract the position number from the end of the word
+        result[position - 1] = word.substring(0, word.length() - 1);
+         // Store the word in the corresponding position
+    }
+    return String.join(" ", result);
+     // Combine the words in the result array into a single sentence
+    }
+}
+
+
+
+
+
+1. Split the given sentence into individual words using the space (" ") as the delimiter.
+2. Create an array of strings to store each word.
+3. Iterate through each word and extract the position number from the end of the word.
+4. Store each word in the corresponding position in the result array.
+5. Combine the words in the result array into a single sentence separated by spaces.
+6. Return the sorted sentence
