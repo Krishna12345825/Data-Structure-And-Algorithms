@@ -29,3 +29,27 @@ Constraints:
 word1[i] and word2[i] consist of lowercase letters.
 */
 
+
+class Solution {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+       StringBuffer str1 = new StringBuffer();
+       StringBuffer str2 = new StringBuffer();
+
+       for(String word : word1){
+           str1.append(word);
+       }
+
+       for(String word : word2){
+           str2.append(word);
+       }
+       return str1.toString().equals(str2.toString());
+    }
+}
+
+
+
+
+1. Concatenate all the elements in the first string array into a single string, say str1.
+2. Concatenate all the elements in the second string array into a single string, say str2.
+3. Compare str1 and str2 to check if they are equal.
+4. Return true if str1 and str2 are equal, otherwise return false.
