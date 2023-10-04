@@ -22,4 +22,5 @@ Basics
 - 3 [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/description/)
 - 4 [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/description/)
 - 5 [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
+- 6 [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
 
