@@ -25,4 +25,5 @@ Basics
 - 6 [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
 - 7 [To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
 - 8 [Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
+- 9 [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/description/)
 
