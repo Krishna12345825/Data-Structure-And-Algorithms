@@ -44,5 +44,14 @@ class Solution {
 
 
 
-
+1. Initialize two variables, x and y, to keep track of the robot's current position. Set both variables to 0 initially.
+2. Iterate through each character in the moves string.
+3. For each character, check if it is 'U', 'D', 'L', or 'R'.
+4. If the character is 'U', increment the y variable by 1.
+5. If the character is 'D', decrement the y variable by 1.
+6. If the character is 'L', decrement the x variable by 1.
+7. If the character is 'R', increment the x variable by 1.
+8. After iterating through all the characters, check if x and y are both 0.
+9. If x and y are both 0, return true. This means the robot returns to its original position.
+10. Otherwise, return false.
 
