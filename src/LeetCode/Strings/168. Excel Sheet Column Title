@@ -47,3 +47,12 @@ class Solution {
 }
 
 
+
+1. Create a StringBuilder to store the column title.
+2. Repeat the following steps while the input number is greater than 0:
+        - Calculate the current column digit by subtracting 1 from the input number modulo 26.
+        - Append the character corresponding to the current column digit to the StringBuilder using the charAt method.
+        - Update the input number by dividing it by 26 (integer division).
+3. Reverse the StringBuilder to get the correct column title.
+4. Convert the StringBuilder to a string and return it.
+
