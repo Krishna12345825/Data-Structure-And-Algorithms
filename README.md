@@ -30,4 +30,5 @@ Basics
 - 11 [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
 - 12 [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)
 - 13 [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+- 14 [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)
 
