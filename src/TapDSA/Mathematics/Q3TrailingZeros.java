@@ -1,6 +1,6 @@
 package TapDSA.Mathematics;
 
-public class TrailingZeros {
+public class Q3TrailingZeros {
     public static void main(String[] args) {
         int n=200;
         System.out.println(tralingzeros(n));
