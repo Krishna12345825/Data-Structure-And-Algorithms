@@ -32,4 +32,5 @@ Basics
 - 13 [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
 - 14 [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)
 - 15 [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+- 16 [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
 
