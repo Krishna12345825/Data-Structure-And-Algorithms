@@ -6,8 +6,7 @@ public class Q9GenerateMirroredTriangle {
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
         System.out.println("Enter the Number");
-//        int n = scanner.nextInt();
-        int n=5;
+        int n = scanner.nextInt();
         pattern9(n);
     }
     public static void pattern9(int n){
