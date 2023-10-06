@@ -3,7 +3,7 @@ All topic cover dsa
 Basic to Advance Data Structures
 
 # Arrays  Questions
- Basics
+- # Basics
 - 1 [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
 - 2 [ Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
 - 3 [ Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
@@ -16,7 +16,7 @@ Basic to Advance Data Structures
 
 
 # Strings  Questions
-Basics
+- # Basics
 - 1 [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)
 - 2 [Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - 3 [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/description/)
