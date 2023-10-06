@@ -1,6 +1,6 @@
 package TapDSA.Mathematics;
 
-public class Factorial {
+public class Q1Factorial {
     public static void main(String[] args) {
         System.out.println(factorial(5));
     }

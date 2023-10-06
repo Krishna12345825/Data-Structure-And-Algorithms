@@ -1,6 +1,6 @@
 package TapDSA.Mathematics;
 
-public class CountDigits {
+public class Q2CountNumberOfDigits {
     public static void main(String[] args) {
         System.out.println(countDigits(123457));
     }
