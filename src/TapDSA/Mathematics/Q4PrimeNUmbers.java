@@ -5,7 +5,7 @@ public class Q4PrimeNUmbers {
         int n= 13;
 //        System.out.println(isPrime1(n));
 //        System.out.println(isPrime2(n));
-        System.out.println(isPrime3(n));
+        System.out.println(checkPrime(n));
     }
 
     public static boolean isPrime1(int n){
@@ -27,7 +27,7 @@ public class Q4PrimeNUmbers {
     }
 
 
-    public static boolean isPrime3(int n){
+    public static boolean checkPrime(int n){
         if (n==1){
             return false;
         }
