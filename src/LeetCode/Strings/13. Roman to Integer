@@ -69,3 +69,10 @@ class Solution {
     }
 }
 
+
+1. Create a HashMap to store the mapping of Roman numerals to their integer values.
+2. Initialize a variable result to 0.
+3. Iterate through the input string from right to left:
+    - Get the integer value of the current Roman numeral using the HashMap.
+    - If the integer value of the current Roman numeral is less than the integer value of the next Roman numeral, subtract it from the result. Otherwise, add it to the result.
+4. Return the resulting integer value.
