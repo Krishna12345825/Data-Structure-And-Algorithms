@@ -16,7 +16,8 @@ Basic to Advance Data Structures
 - 10 [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/)
 - 11 [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 - 12 [Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
-- 12 [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)
+- 13 [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)
+- 14 [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
 
 
 
