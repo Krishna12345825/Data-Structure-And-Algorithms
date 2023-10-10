@@ -22,6 +22,7 @@ Basic to Advance Data Structures
 - 16 [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/)
 - 17 [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)
 - 18 [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/description/)
+- 19 [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 
 
 
