@@ -39,7 +39,7 @@ class Solution {
 
 
 
-To shuffle the string according to the given indices, you can create a new character array of the same length as the string s.
- Then, iterate through the indices array and assign each character from s to the corresponding position in the new array.
- This code iterates through each character of the input string s and assigns it to the corresponding position in the
- shuffled array based on the indices. Finally, it creates a new string from the shuffled array and returns it as the shuffled string.
+1. To shuffle the string according to the given indices, you can create a new character array of the same length as the string s.
+2. Then, iterate through the indices array and assign each character from s to the corresponding position in the new array.
+3. This code iterates through each character of the input string s and assigns it to the corresponding position in the
+4. shuffled array based on the indices. Finally, it creates a new string from the shuffled array and returns it as the shuffled string.
