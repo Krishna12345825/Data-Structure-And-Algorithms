@@ -22,9 +22,7 @@ Input: items = [["phone","blue","pixel"],["computer","silver","phone"],["phone",
 Output: 2
 Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. Note that the item ["computer","silver","phone"] does not match.
 
-
 Constraints:
-
 1 <= items.length <= 104
 1 <= typei.length, colori.length, namei.length, ruleValue.length <= 10
 ruleKey is equal to either "type", "color", or "name".
