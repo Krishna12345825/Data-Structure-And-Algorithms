@@ -1,6 +1,6 @@
 package TapDSA.Programming.DataTypes;
 
-
+// Write a program to add two integer numbers.
 import java.util.Scanner;
 
 public class Q1Add2Integers {
