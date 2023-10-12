@@ -1,0 +1,59 @@
+
+https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/description/
+
+/*
+1217. Minimum Cost to Move Chips to The Same Position
+
+We have n chips, where the position of the ith chip is position[i].
+We need to move all the chips to the same position. In one step, we can change the position of the ith chip from position[i] to:
+position[i] + 2 or position[i] - 2 with cost = 0.
+position[i] + 1 or position[i] - 1 with cost = 1.
+Return the minimum cost needed to move all the chips to the same position.
+
+Example 1:
+Input: position = [1,2,3]
+Output: 1
+Explanation: First step: Move the chip at position 3 to position 1 with cost = 0.
+Second step: Move the chip at position 2 to position 1 with cost = 1.
+Total cost is 1.
+
+Example 2:
+Input: position = [2,2,2,3,3]
+Output: 2
+Explanation: We can move the two chips at position  3 to position 2. Each move has cost = 1. The total cost = 2.
+
+Example 3:
+Input: position = [1,1000000000]
+Output: 1
+
+Constraints:
+1 <= position.length <= 100
+1 <= position[i] <= 10^9
+*/
+
+
+class Solution {
+    public int minCostToMoveChips(int[] position) {
+    int evenCount = 0;
+    int oddCount = 0;
+
+    for (int chipPosition : position) {
+        if (chipPosition % 2 == 0) { // even position
+            evenCount++;
+        } else { // odd position
+            oddCount++;
+        }
+    }
+
+    return Math.min(evenCount, oddCount);
+    }
+}
+
+
+
+
+1. The position of each chip is given as an array, and we can move each chip from its current position to a neighboring position at a cost of either 0 or 1.
+2. To solve this problem, we can observe that the cost of moving a chip from one position to another is determined by the parity of the difference in positions.
+3. If the difference in positions is even, the cost is 0, and if the difference is odd, the cost is 1.
+4. Since we want to minimize the total cost, we need to count the number of chips with odd positions and the number of chips with even positions.
+5. Then, we can return the minimum of these two counts as the minimum cost.
