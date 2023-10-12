@@ -25,6 +25,7 @@ Basic to Advance Data Structures
 - 19 [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 - 20 [Two Sum](https://leetcode.com/problems/two-sum/)
 - 21 [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/description/)
+- 22 [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)
 
 
 
