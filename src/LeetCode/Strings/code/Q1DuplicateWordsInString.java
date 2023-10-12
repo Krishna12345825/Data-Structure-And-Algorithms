@@ -1,4 +1,4 @@
-package lectures.string.interview;
+package LeetCode.Strings.code;
 
 //1) Write a Java program to find the duplicate words and their number of occurrences in a string?
 

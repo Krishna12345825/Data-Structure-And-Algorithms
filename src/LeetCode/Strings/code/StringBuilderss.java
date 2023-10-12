@@ -1,4 +1,4 @@
-package lectures.string.code;
+package LeetCode.Strings.code;
 
 public class StringBuilderss {
     public static void main(String[] args) {

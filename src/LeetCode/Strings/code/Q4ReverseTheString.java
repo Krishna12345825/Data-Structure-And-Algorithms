@@ -1,4 +1,4 @@
-package lectures.string.interview;
+package LeetCode.Strings.code;
 
 public class Q4ReverseTheString {
     public static void main(String[] args) {

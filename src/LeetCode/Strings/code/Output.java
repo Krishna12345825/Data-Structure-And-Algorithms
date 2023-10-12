@@ -1,4 +1,4 @@
-package lectures.string.code;
+package LeetCode.Strings.code;
 
 import java.util.Arrays;
 

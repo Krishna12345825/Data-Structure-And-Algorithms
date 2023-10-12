@@ -1,6 +1,5 @@
-package lectures.string.code;
+package LeetCode.Strings.code;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Methods {

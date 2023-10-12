@@ -1,4 +1,4 @@
-package lectures.string.interview;
+package LeetCode.Strings.code;
 
 import java.util.Scanner;
 

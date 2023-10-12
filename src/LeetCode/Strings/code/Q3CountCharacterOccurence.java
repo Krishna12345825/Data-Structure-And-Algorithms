@@ -1,4 +1,4 @@
-package lectures.string.interview;
+package LeetCode.Strings.code;
 
 //3) Write a Java program to count the total number of occurrences of a given character in a string without using any loop?
 public class Q3CountCharacterOccurence {
