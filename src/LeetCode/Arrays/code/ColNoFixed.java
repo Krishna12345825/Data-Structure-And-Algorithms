@@ -1,4 +1,4 @@
-package lectures.arrays.code;
+package LeetCode.Arrays.code;
 
 public class ColNoFixed {
     public static void main(String[] args) {
