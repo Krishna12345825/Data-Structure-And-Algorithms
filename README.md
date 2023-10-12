@@ -27,6 +27,7 @@ Basic to Advance Data Structures
 - 21 [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/description/)
 - 22 [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)
 - 23 [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)
+- 23 [Plus One](https://leetcode.com/problems/plus-one/description/)
 
 
 
