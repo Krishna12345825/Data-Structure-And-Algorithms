@@ -3,7 +3,7 @@ All topic cover dsa
 Basic to Advance Data Structures
 
 # Arrays  Questions
-- # Basics
+- # Basics Question Arrays
 - 1 [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
 - 2 [ Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
 - 3 [ Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
@@ -31,6 +31,8 @@ Basic to Advance Data Structures
 - 25 [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - 26 [Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/description/)
 
+- # Medium Question Arrays
+- 1 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
 
 # Strings  Questions
