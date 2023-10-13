@@ -34,6 +34,7 @@ Basic to Advance Data Structures
 - # Medium Question Arrays
 - 1 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 - 2 [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)
+- 3 [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
 
 
 # Strings  Questions
