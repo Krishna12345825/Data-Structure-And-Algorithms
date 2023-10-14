@@ -40,6 +40,8 @@ Basic to Advance Data Structures
 - 5 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)
 - 6 [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
 - 7 [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+- 8 [Jump Game](https://leetcode.com/problems/jump-game/description/)
+- 
 
 
 
