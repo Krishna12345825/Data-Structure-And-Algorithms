@@ -44,3 +44,46 @@ class Solution {
         }
     }
 }
+----------------------------------------------------------------------------------------------------------------------------------
+This problem can be solved using the Dutch National Flag algorithm, also known as the 3-way partitioning algorithm.
+
+The algorithm consists of three pointers: low, mid, and high. The low pointer represents the boundary of the sorted 0's,
+ the mid pointer represents the boundary of the sorted 1's, and the high pointer represents the boundary of the sorted 2's.
+
+Here's the step-by-step algorithm:
+
+1. Initialize low as 0, mid as 0, and high as nums.length - 1.
+2. Iterate through the array while mid is less than or equal to high.
+3. If nums[mid] is 0, swap nums[low] with nums[mid], increment low and mid.
+4. If nums[mid] is 1, increment mid.
+5. If nums[mid] is 2, swap nums[mid] with nums[high], decrement high.
+6. Repeat steps 2-5 until mid is greater than high.
+7. The array will now be sorted in-place.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+public class Solution {
+    public void sortColors(int[] nums) {
+        int low = 0;
+        int mid = 0;
+        int high = nums.length - 1;
+
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums, low, mid);
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else {
+                swap(nums, mid, high);
+                high--;
+            }
+        }
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
