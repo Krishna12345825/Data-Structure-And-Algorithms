@@ -37,6 +37,9 @@ Basic to Advance Data Structures
 - 2 [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)
 - 3 [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
 - 4 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+- 5 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)
+- 6 [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
+- 
 
 
 # Strings  Questions
