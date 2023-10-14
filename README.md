@@ -2,6 +2,7 @@
 All topic cover dsa
 Basic to Advance Data Structures
 
+
 # Arrays  Questions
 - # Basics Question Arrays
 - 1 [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
