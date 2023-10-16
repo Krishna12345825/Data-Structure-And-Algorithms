@@ -31,6 +31,7 @@ Basic to Advance Data Structures
 - 24 [Plus One](https://leetcode.com/problems/plus-one/description/)
 - 25 [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - 26 [Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/description/)
+- 27 [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 
 - # Medium Question Arrays
 - 1 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
