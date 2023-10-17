@@ -1,0 +1,53 @@
+
+https://leetcode.com/problems/sqrtx/description/
+
+/*
+69. Sqrt(x)
+
+Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+You must not use any built-in exponent function or operator.
+For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+
+Example 1:
+Input: x = 4
+Output: 2
+Explanation: The square root of 4 is 2, so we return 2.
+
+Example 2:
+Input: x = 8
+Output: 2
+Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+
+Constraints:
+0 <= x <= 231 - 1
+*/
+----------------------------------------------Approach---------------------------------------------
+1. Define the lower bound left as 0 and the upper bound right as x.
+2. While left is less than or equal to right, do the following steps:
+       - Calculate the middle value mid as the average of left and right: (left + right) / 2.
+       - If mid squared is equal to x, return mid as the square root.
+       - If mid squared is less than x, update left to mid + 1.
+       - If mid squared is greater than x, update right to mid - 1.
+3. If the loop terminates without finding the exact square root, return right as the nearest integer square root.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+class Solution {
+    public int mySqrt(int x) {
+        if(x == 0){
+            return 0;
+        }
+        int start =1;
+        int end = x;
+        while(start<=end){
+            int mid = start + (end - start)/2;
+            if(mid == x / mid){
+                return mid;
+            }else if(x / mid > mid){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }
+        return end;
+    }
+}
+

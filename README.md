@@ -46,6 +46,9 @@ Basic to Advance Data Structures
 - 10 [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
 
+# Searching  Questions
+- # Easy Question Searching
+- 1 [Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 
 
 # Strings  Questions
