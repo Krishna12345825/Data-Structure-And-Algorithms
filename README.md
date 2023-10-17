@@ -49,6 +49,7 @@ Basic to Advance Data Structures
 # Searching  Questions
 - # Easy Question Searching
 - 1 [Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
+- 2 [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 
 
 # Strings  Questions

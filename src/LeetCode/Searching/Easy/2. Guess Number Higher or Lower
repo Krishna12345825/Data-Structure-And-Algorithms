@@ -1,0 +1,73 @@
+
+https://leetcode.com/problems/guess-number-higher-or-lower/
+
+/*
+374. Guess Number Higher or Lower
+
+We are playing the Guess Game. The game is as follows:
+I pick a number from 1 to n. You have to guess which number I picked.
+Every time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.
+You call a pre-defined API int guess(int num), which returns three possible results:
+
+-1: Your guess is higher than the number I picked (i.e. num > pick).
+1: Your guess is lower than the number I picked (i.e. num < pick).
+0: your guess is equal to the number I picked (i.e. num == pick).
+Return the number that I picked.
+
+Example 1:
+Input: n = 10, pick = 6
+Output: 6
+
+Example 2:
+Input: n = 1, pick = 1
+Output: 1
+
+Example 3:
+Input: n = 2, pick = 1
+Output: 1
+
+Constraints:
+1 <= n <= 231 - 1
+1 <= pick <= n
+*/
+
+-----------------------------------------------------Approach ------------------------------------------------------
+1. We initialize the range of numbers to search in from 1 to n, represented by the variables left and right.
+2. In each iteration, we calculate the mid value using binary search: mid = left + (right - left) / 2.
+3. We call the guess function with the mid value to check if it is the correct number.
+4. Based on the result of the guess function, we narrow down the search range by updating left or right accordingly.
+5. We repeat this process until we find the correct number, in which case we return it, or until the range is empty (left > right), in which case we return -1 to indicate that the number was not found.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/**
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+public class Solution extends GuessGame {
+    public int guessNumber(int n) {
+        int start =1;
+        int end = n;
+        while(start<=end){
+            int mid = start + (end - start)/2;
+            int result = guess(mid);
+
+            if(result == 0){
+                // Found the correct number
+                return mid;
+            }else if(result == -1){
+                // The number is higher, so search in the left half
+                end = mid-1;
+            }else{
+                // The number is lower, so search in the right half
+                start = mid+1;
+            }
+        }
+        return -1;
+    }
+}
+
