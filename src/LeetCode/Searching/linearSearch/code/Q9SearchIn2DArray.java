@@ -5,7 +5,7 @@ public class Q9SearchIn2DArray {
         int[][] arr = {
                 {23, 4, 1},
                 {18, 12, 3, 9},
-                {78, 99, 34, 56},
+                {78, 990, 34, 56},
                 {18, 12}
         };
         int target = 56;

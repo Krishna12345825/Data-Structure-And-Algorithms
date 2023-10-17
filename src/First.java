@@ -43,21 +43,24 @@ class RamiReddySirThread extends Thread
 
 class Test {
     public static void main(String[] args) {
-        RattaiahSirThread thread1=new RattaiahSirThread();
-        NagoorSirThread thread2=new NagoorSirThread();
-        RamiReddySirThread thread3=new RamiReddySirThread();
-        thread1.setPriority(Thread.MAX_PRIORITY);
-        System.out.println(thread1.getPriority());
-        thread2.setPriority(Thread.MIN_PRIORITY);
-        System.out.println(thread2.getPriority());
-        thread3.setPriority(thread2.getPriority()+1);
-        System.out.println(thread3.getPriority());
-        System.out.println("starting of Rattaiah Thread");
-        thread1.start();
-        System.out.println("starting of Nagoor Thread");
-        thread2.start();
-        System.out.println("starting of RamiReddy Thread");
-        thread3.start();
+//        RattaiahSirThread thread1=new RattaiahSirThread();
+//        NagoorSirThread thread2=new NagoorSirThread();
+//        RamiReddySirThread thread3=new RamiReddySirThread();
+//        thread1.setPriority(Thread.MAX_PRIORITY);
+//        System.out.println(thread1.getPriority());
+//        thread2.setPriority(Thread.MIN_PRIORITY);
+//        System.out.println(thread2.getPriority());
+//        thread3.setPriority(thread2.getPriority()+1);
+//        System.out.println(thread3.getPriority());
+//        System.out.println("starting of Rattaiah Thread");
+//        thread1.start();
+//        System.out.println("starting of Nagoor Thread");
+//        thread2.start();
+//        System.out.println("starting of RamiReddy Thread");
+//        thread3.start();
+        
+        boolean k = false;
+        System.out.println(k);
     }
 }
 
