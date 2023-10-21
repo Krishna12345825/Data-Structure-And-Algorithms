@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Anagram {
 
     public static void main(String[] args) {
-        String s = "krishnA";
-        String s1 = "krishn1";
+        String s = "krishn";
+        String s1 = "krishn";
         System.out.println(isAnagram(s,s1));
     }
     static boolean isAnagram(String s1, String s2) {
