@@ -5,7 +5,10 @@ public class Q10FirstAndLastPostion {
     public static void main(String[] args) {
         int [] arr ={3,4,4,4,4,4,4,4,6};
         int target =4;
-        System.out.println(searchRange(arr,target));
+       int arr1[] =  searchRange(arr, target);
+       for (int i=0; i<arr1.length; i++){
+           System.out.print(arr1[i]+" ");
+       }
     }
 
     public static int[] searchRange(int []nums, int target){
