@@ -3,7 +3,7 @@ package PracticeQuestion.Programming.Loops;
 import java.util.Scanner;
 
 /*
-Write a program to find factors of a given number.
+Write a program to find factors of a given number. ok
 */
 public class Q12Factors {
     public static void main(String[] args) {

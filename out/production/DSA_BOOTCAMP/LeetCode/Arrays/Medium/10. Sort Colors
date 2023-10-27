@@ -1,0 +1,89 @@
+
+https://leetcode.com/problems/sort-colors/description/
+
+/*
+75. Sort Colors
+
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+You must solve this problem without using the library's sort function.
+
+Example 1:
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+
+Example 2:
+Input: nums = [2,0,1]
+Output: [0,1,2]
+
+Constraints:
+n == nums.length
+1 <= n <= 300
+nums[i] is either 0, 1, or 2.
+*/
+
+
+
+class Solution {
+    public void sortColors(int[] arr) {
+          boolean swapped;
+        // run the steps n-1 times
+        for (int i = 0; i < arr.length; i++) {
+            swapped = false;
+            // for each step, max item will come at the last respective index
+            for (int j = 1; j < arr.length - i; j++) {
+                // swap if the item is smaller than the previous item
+                if (arr[j] < arr[j - 1]) {
+                    // swap
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                    swapped = true;
+                }
+            }
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------
+This problem can be solved using the Dutch National Flag algorithm, also known as the 3-way partitioning algorithm.
+
+The algorithm consists of three pointers: low, mid, and high. The low pointer represents the boundary of the sorted 0's,
+ the mid pointer represents the boundary of the sorted 1's, and the high pointer represents the boundary of the sorted 2's.
+
+Here's the step-by-step algorithm:
+
+1. Initialize low as 0, mid as 0, and high as nums.length - 1.
+2. Iterate through the array while mid is less than or equal to high.
+3. If nums[mid] is 0, swap nums[low] with nums[mid], increment low and mid.
+4. If nums[mid] is 1, increment mid.
+5. If nums[mid] is 2, swap nums[mid] with nums[high], decrement high.
+6. Repeat steps 2-5 until mid is greater than high.
+7. The array will now be sorted in-place.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+public class Solution {
+    public void sortColors(int[] nums) {
+        int low = 0;
+        int mid = 0;
+        int high = nums.length - 1;
+
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums, low, mid);
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else {
+                swap(nums, mid, high);
+                high--;
+            }
+        }
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}

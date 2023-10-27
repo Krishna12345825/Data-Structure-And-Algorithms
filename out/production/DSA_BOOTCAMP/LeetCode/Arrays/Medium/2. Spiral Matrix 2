@@ -1,0 +1,73 @@
+
+https://leetcode.com/problems/spiral-matrix-ii/description/
+
+/*
+59. Spiral Matrix II
+
+Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
+
+Example 1:
+Input: n = 3
+Output: [[1,2,3],[8,9,4],[7,6,5]]
+
+Example 2:
+Input: n = 1
+Output: [[1]]
+
+Constraints:
+1 <= n <= 20
+*/
+
+-------------approach---------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Create an n x n matrix filled with zeros.
+2. Initialize four variables: top, bottom, left, and right to keep track of the boundaries of the matrix.
+3. Initialize a counter variable to 1.
+4. Start a while loop as long as the top boundary is less than or equal to the bottom boundary and the left boundary is less than or equal to the right boundary.
+5. Traverse the top row from the left boundary to the right boundary and assign the counter value to each element in the matrix. Then increment the counter.
+6. Traverse the right column from the top boundary to the bottom boundary and assign the counter value to each element in the matrix. Then increment the counter.
+7. Check if the top boundary is less than or equal to the bottom boundary and if the left boundary is less than or equal to the right boundary.
+8. If true, traverse the bottom row from the right boundary to the left boundary and assign the counter value to each element in the matrix. Then increment the counter.
+9. If true, traverse the left column from the bottom boundary to the top boundary and assign the counter value to each element in the matrix. Then increment the counter.
+10. Finally, return the matrix.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class Solution {
+    public int[][] generateMatrix(int n) {
+        int matrix[][] = new int[n][n];
+        int top = 0;
+        int buttom = n-1;
+        int left = 0;
+        int right = n-1;
+        int counter =1;
+        while(left<=right && top<=buttom){
+            // Traverse top row
+            for(int i=left; i<=right; i++){
+                matrix[top][i] = counter++;
+            }
+            top++;
+
+            // Traverse right column
+            for(int i=top; i<=buttom; i++){
+                matrix[i][right] = counter++;
+            }
+            right--;
+
+            if(left<=right && top<=buttom){
+                 // Traverse bottom row
+                for(int i=right; i>=left; i--){
+                    matrix[buttom][i] = counter++;
+                }
+                buttom--;
+
+                for(int i = buttom; i>=top; i--){
+                    // Traverse left column
+                    matrix[i][left] =counter++;
+                }
+                left++;
+            }
+        }
+        return matrix;
+    }
+}
+

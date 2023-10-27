@@ -1,0 +1,63 @@
+
+https://leetcode.com/problems/matrix-diagonal-sum/
+
+/*
+1572. Matrix Diagonal Sum
+
+Given a square matrix mat, return the sum of the matrix diagonals.
+Only include the sum of all the elements on the primary diagonal and all the elements on the secondary diagonal that are not part of the primary diagonal.
+
+Example 1:
+Input: mat = [[1,2,3],
+              [4,5,6],
+              [7,8,9]]
+Output: 25
+Explanation: Diagonals sum: 1 + 5 + 9 + 3 + 7 = 25
+Notice that element mat[1][1] = 5 is counted only once.
+
+Example 2:
+Input: mat = [[1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1]]
+Output: 8
+
+Example 3:
+Input: mat = [[5]]
+Output: 5
+
+Constraints:
+n == mat.length == mat[i].length
+1 <= n <= 100
+1 <= mat[i][j] <= 100
+*/
+
+
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int m =  mat.length;
+        int n = mat[0].length;
+        int sum =0;
+
+        for(int i =0; i<m; i++){
+            // Add primary diagonal elements
+            sum+=mat[i][i];
+            // Add secondary diagonal elements
+            sum+=mat[i][n-i-1];
+        }
+        if(m%2!=0){
+            // Subtract element at the center if m is odd
+            sum-=mat[m/2][m/2];
+        }
+        return sum;
+    }
+}
+
+
+
+
+1. Initialize a variable sum to 0. This variable will store the sum of the diagonal elements.
+2. Iterate through the rows of the matrix and add the value of the element at index [i][i] to sum. This corresponds to the primary diagonal elements.
+3. Iterate through the rows of the matrix again, but in reverse order, from m-1 to 0. Add the value of the element at index [i][j], where j is n-i-1, to sum. This corresponds to the secondary diagonal elements.
+4. If m is odd, subtract the value of the element at index [m/2][m/2] from sum because it has been counted twice (both in the primary and secondary diagonals).
+5. Finally, return the value of sum as the result.

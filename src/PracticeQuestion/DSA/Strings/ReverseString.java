@@ -2,7 +2,7 @@ package PracticeQuestion.DSA.Strings;
 //String Reverse
 public class ReverseString {
     public static void main(String[] args) {
-        String s="krishna";
+        String s="krishna kumar";
 //       String result = reverString(s);
 //        System.out.println(result);
 //        System.out.println(reverseString1(s));
