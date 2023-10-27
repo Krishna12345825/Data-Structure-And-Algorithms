@@ -1,4 +1,4 @@
-package PracticeQuestion.Programming.ArrayTraversalV1;
+package PracticeQuestion.Programming.ArrayTraversalV2;
 
 /*
 Even Index Elements
@@ -26,7 +26,7 @@ Even Index Elements
 
 import java.util.Scanner;
 
-public class Q18 {
+public class Q1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
