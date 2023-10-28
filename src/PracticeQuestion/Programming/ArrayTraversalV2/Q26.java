@@ -49,6 +49,13 @@ public class Q26 {
                if (arr[i] > max){
                    max = arr[i];
                }
+
+          /*  if(arr[i] >max){
+                max = arr[i];
+                count = 1;
+            }else if(arr[i] == max){
+                count++;
+            }*/
         }
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == max){
