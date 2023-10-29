@@ -40,7 +40,7 @@ public class Q27 {
         int result1 = findSmallestRepeatingElementDescending(arr);
         int result2 = findLargestRepeatingElementDescending(arr);
            if (result1 < result2){
-               System.out.println(arr[result1]+" "+arr[result2]);
+               System.out.println(result1+" "+result2);
            }else {
                System.out.println("-1");
            }

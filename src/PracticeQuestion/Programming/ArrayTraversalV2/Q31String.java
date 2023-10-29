@@ -25,5 +25,24 @@ Last Occurrence Index Finder
         5
 */
 
-public class Q31chnage {
+import java.util.Scanner;
+
+public class Q31String{
+    public static void main(String[] args) {
+        Scanner scanner =  new Scanner(System.in);
+        String str = scanner.nextLine();
+        char k = scanner.next().charAt(0);
+        int result = lastOccuranceIndex(str, k);
+        System.out.println(result);
+    }
+    static int lastOccuranceIndex(String str, char k){
+        int index = -1;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == k){
+                index = i;
+            }
+        }
+        return index;
+    }
 }
+

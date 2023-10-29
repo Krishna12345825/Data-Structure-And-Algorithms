@@ -30,6 +30,28 @@ Missing Element
 */
 
 
-public class Q32change {
+import java.util.Scanner;
+
+public class Q32 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int ressult = missingElement(arr);
+        System.out.println(ressult);
+
+    }
+    static int missingElement(int arr[]){
+        int n = arr.length;
+        int naturalNumber = (n + 1) * (n + 2) / 2;
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum+= arr[i];
+        }
+        return naturalNumber - sum;
+    }
 
 }
