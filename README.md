@@ -44,7 +44,6 @@ Basic to Advance Data Structures
 - 8 [Jump Game](https://leetcode.com/problems/jump-game/description/)
 - 9 [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
 - 10 [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
-- 11 [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
 # Searching  Questions
 - # Easy Question Searching
