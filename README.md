@@ -32,7 +32,7 @@ Basic to Advance Data Structures
 - 25 [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - 26 [Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/description/)
 - 27 [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
-
+- 28 [Majority Elements](https://leetcode.com/problems/majority-element/description/)
 - # Medium Question Arrays
 - 1 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 - 2 [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)
@@ -44,7 +44,7 @@ Basic to Advance Data Structures
 - 8 [Jump Game](https://leetcode.com/problems/jump-game/description/)
 - 9 [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
 - 10 [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
-
+- 11 [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
 # Searching  Questions
 - # Easy Question Searching
