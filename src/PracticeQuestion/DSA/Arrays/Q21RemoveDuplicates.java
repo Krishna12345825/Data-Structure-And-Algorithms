@@ -17,13 +17,13 @@ public class Q21RemoveDuplicates {
 
 
     public static int removeDuplicates(int []arr){
-        int result=0;
+        int removeDuplicates=0;
         for (int i = 1; i <arr.length; i++) {
-            if (arr[result]!=arr[i]){
-                result++;
-                arr[result] =arr[i];
+            if (arr[removeDuplicates]!=arr[i]){
+                removeDuplicates++;
+                arr[removeDuplicates] =arr[i];
             }
         }
-        return result+1;
+        return removeDuplicates+1;
     }
 }

@@ -2,7 +2,7 @@ package PracticeQuestion.DSA.Arrays;
 
 public class Q25SubArrayOfAnArray {
     public static void main(String[] args) {
-        int arr[] ={1,2,3,4,5};
+        int arr[] ={1,2,3,4,5,6};
         subArray(arr);
     }
 
