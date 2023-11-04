@@ -14,8 +14,8 @@ public class Q10Hcf {
 
 
     public static void main(String[] args) {
-        int a=36;
-        int b = 24;
+        int a=24;
+        int b = 3;
         findHcf2(a, b);
     }
 }
