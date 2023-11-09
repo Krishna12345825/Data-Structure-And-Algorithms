@@ -1,27 +1,42 @@
 import java.util.Scanner;
 
 class Demo {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+//        int n1 = scanner.nextInt();
+//        int arr1[] = new int[n1];
+//        for (int i = 0; i < arr.length; i++) {
+//            arr1[i] = scanner.nextInt();
+//        }
+        countElement(arr);
+    }
+    // arr1[i]%2==0 &&
+    static  void  countElement(int arr1[]) {
+        int i = 0, j = 0;
+        while (i < arr1.length ){
+           if (arr1[i] == 0){
+               i++;
+           }else {
+               arr1[j] = arr1[i];
+               i++;
+               j++;
+           }
 
-            Scanner scanner = new Scanner(System.in);
-            int n= scanner.nextInt();
-            print1(n);
         }
-        static  void print1(int n){
-            for (int i = 1; i <=n ; i++) {
-                for (int k = 1; k <=n -i; k++) {
-                    System.out.print(" ");
-                }
-                for (int j = 1; j <=i; j++) {
-                    if (i==j || i==n || j==1 ){
-                        System.out.print("*"+" ");
-                    }else {
-                        System.out.print("  ");
-                    }
-                }
-                System.out.println();
-            }
+        while (j < arr1.length){
+            arr1[j] = 0;
+            j++;
         }
+        for (int k = 0; k < arr1.length; k++) {
+            System.out.print(arr1[k]+" ");
+        }
+
+    }
 
 }
 
