@@ -1,16 +1,16 @@
 package Tap.Tai.Q6ArrayPairs;
 
 /*
-Pairs with second Value Larger
+Pairs with First Value Smaller
 sample input 1:-
 5
-3 1 5 4 2
+4 9 2 7 5
 sample output :-
-3 5
-3 4
-1 5
-1 4
-1 2
+4 9
+4 7
+4 5
+2 7
+2 5
 
 
 sample input 2:-
@@ -24,7 +24,7 @@ sample output2 :-
 
 import java.util.Scanner;
 
-public class Q3 {
+public class Q4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -32,13 +32,13 @@ public class Q3 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
         }
-        pairsWithSmaller(arr);
+        pairsWithLarger(arr);
     }
 
-    static void pairsWithSmaller(int []arr){
+    static void pairsWithLarger(int []arr){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] < arr[j]){
+                if (arr[i] > arr[j]){
                     System.out.println(arr[i]+" "+arr[j]);
                 }
             }
