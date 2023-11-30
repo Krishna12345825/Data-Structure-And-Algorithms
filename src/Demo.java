@@ -2,32 +2,62 @@ import java.util.Scanner;
 
 
 class Demo {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        checkSMallestwors(s);
-    }
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            String s = scanner.nextLine();
+          String ans = smallestWords(s);
+            System.out.println(ans);
 
-    static  void  checkSMallestwors(String s){
-        String smallesttWord = "";
-        String temproryWord = "";
-        int smallestWordLength = Integer.MAX_VALUE;
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if(ch == ' ' || ch == s.length()-1){
-                if (temproryWord.length() < smallestWordLength){
-                    smallesttWord = temproryWord;
-                    smallestWordLength = temproryWord.length();
-                }
-                temproryWord = "";
-            }else {
-                temproryWord = temproryWord + ch;
-            }
         }
-        System.out.println(smallesttWord);
+
+
+
+
+        static int countWords(String s) {
+            int count = 0;
+            for (int i = 0; i < s.length() - 1; i++) {
+                if (s.charAt(i) == ' ' && s.charAt(i + 1) != ' ') {
+                    count++;
+                }
+            }
+            return s.charAt(0) == ' ' ? count : count + 1;
+        }
+
+
+        static String[] split(String s) {
+            int wordCount = countWords(s);
+            String[] arr = new String[wordCount];
+            String t = "";
+            int j = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) != ' ') {
+                    t = t + s.charAt(i);
+                } else if (t.length() > 0) {
+                    arr[j] = t;
+                    j++;
+                    t = "";
+                }
+            }
+            arr[j] = t;
+            return arr;
+        }
+
+        static  String smallestWords(String s){
+            String arr[] = split(s);
+            String smallestWord = arr[0];
+            for (int i = 0; i < arr.length; i++) {
+                String currentWord = arr[i];
+                if (currentWord.length() < smallestWord.length()){
+                    smallestWord = currentWord;
+                }
+            }
+            return smallestWord;
+        }
+
+
     }
 
 
-}
+
 
 
