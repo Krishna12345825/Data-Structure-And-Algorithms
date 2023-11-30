@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 class Demo {
     public static void main(String[] args) {
+
         List<Employee> employeeList = new ArrayList<>();
+
         Employee employee = new Employee(1, "Krihna ", "krishna@gmail.com", 1200);
         Employee employee1 = new Employee(2, "Rahul", "rahul@gmail.com", 12300);
         Employee employee2 = new Employee(3, "Manish", "manish@gmail.com", 245);
-
 
         employeeList.add(employee);
         employeeList.add(employee1);
@@ -21,6 +22,7 @@ class Demo {
 
      }
     }
+
     class Employee{
     int id;
     String name;
