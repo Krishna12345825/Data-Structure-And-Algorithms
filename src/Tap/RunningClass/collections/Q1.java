@@ -1,6 +1,7 @@
 package Tap.RunningClass.collections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 class  Employee{
@@ -50,15 +51,16 @@ class  Employee{
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
 }
 public class Q1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Employee> employeeList = new ArrayList<Employee>();
-
             int n = scanner.nextInt();
-        for (int i = 0; i < n ; i++) {
+
+        for (int i = 0; i<n ; i++) {
             String s = scanner.next();
             String []arr = s.split(",");
 
@@ -76,3 +78,8 @@ public class Q1 {
         }
     }
 }
+
+
+//alex,Hr,3000
+//bob,IT,5000
+//Jack,IT,3999
