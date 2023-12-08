@@ -1,16 +1,42 @@
 package Tap.RunningClass.collections;
 
-import java.util.Comparator;
-import java.util.Scanner;
-import java.util.TreeSet;
+import java.util.*;
 
+
+class MyCompare2 implements Comparator<Employee6>{
+
+    @Override
+    public int compare(Employee6 e1, Employee6 e2) {
+       String name1 = e1.getName();
+       String name2 = e2.getName();
+
+       int l1 = name1.length();
+       int l2 = name2.length();
+
+       if (l1 != l2){
+           return l1 - l2;
+       }else {
+           return name1.compareTo(name2);
+       }
+
+    }
+}
 
 class MyCompare1 implements Comparator<Employee6> {
     @Override
     public int compare(Employee6 e1, Employee6 e2) {
         String name1 = e1.getName();
         String name2 = e2.getName();
-        return name1.compareTo(name2);
+
+
+//        return name1.compareTo(name2);
+
+        if (name1.compareTo(name2) != 0){
+            return name1.compareTo(name2);
+        }else {
+            return e1.getId() -  e2.getId();
+
+        }
     }
 }
 
@@ -82,7 +108,7 @@ class Employee6 implements Comparable<Employee6> {
 
         //        if name and salary are same then they will sort based on id  with name  in reverse order and salary in decsing order
         if (salary1 != salary2){
-            return salary1 - salary2;
+            return salary2 - salary1;
         } else if (name1.compareTo(name2) != 0) {
             return name1.compareTo(name2) * -1;
         }else {
@@ -94,13 +120,15 @@ class Employee6 implements Comparable<Employee6> {
 public class Q6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MyCompare1 compare1 = new MyCompare1();
-        TreeSet<Employee6> treeSet = new TreeSet<Employee6>(compare1);
+//        MyCompare1 compare1 = new MyCompare1();
+        MyCompare2 compare1 = new MyCompare2();
+//        TreeSet<Employee6> treeSet = new TreeSet<Employee6>(compare1);
+        ArrayList<Employee6> treeSet = new ArrayList<>();
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             String s = sc.next();
             String arr[] = s.split(",");
-            int id = 100 + i;
+            int id = 1001 + i;
             String name = arr[0];
             String Department = arr[1];
             int salary = Integer.parseInt(arr[2]);
@@ -111,11 +139,18 @@ public class Q6 {
         for (Employee6 emp : treeSet){
             System.out.println(emp);
         }
+
+        System.out.println("After Sorting");
+        Collections.sort(treeSet);
+        for (Employee6 emp : treeSet){
+            System.out.println(emp);
+        }
     }
 }
 
 
-//        alex,Hr,3000
-//        Jack,IT,2000
+//       alex,Hr,3000
+//        bob,IT,5000
+//        jack,IT,2000
 //        bob,IT,5000
 //        jack,IT,5000
