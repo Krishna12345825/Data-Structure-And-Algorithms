@@ -145,6 +145,13 @@ public class Q6 {
         for (Employee6 emp : treeSet){
             System.out.println(emp);
         }
+
+
+        System.out.println("After Customised Sorting");
+        Collections.sort(treeSet, compare1);
+        for (Employee6 emp : treeSet){
+            System.out.println(emp);
+        }
     }
 }
 
