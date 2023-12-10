@@ -1,4 +1,4 @@
-package Tap.DSA.LinkedList.SingleLinkedList;
+package Tap.DSA.LinkedList;
 
 class Node {
     int data;
