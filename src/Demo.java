@@ -1,39 +1,31 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+
 class Demo {
     public static void main(String[] args) {
-        String input = "programming";
-        String input1 = "gramming";
-
-        if (isSubstring(input, input1)) {
-            System.out.println("Substring found");
-        } else {
-            System.out.println("No substring found");
-        }
+       String s = "mississippi";
+      String s1 = removeDuplicates(s);
+        System.out.println(s1);
     }
-
-    static boolean isSubstring(String s, String s1) {
-        int len1 = s.length();
-        int len2 = s1.length();
-
-        for (int i = 0; i <= len1 - len2; i++) {
-            int j;
-
-            for (j = 0; j < len2; j++) {
-                if (s.charAt(i + j) != s1.charAt(j)) {
-                    break;
-                }
-            }
-
-            if (j == len2) {
-                // If the loop didn't break, it means we found a substring match
-                return true;
+    static String removeDuplicates(String s){
+        HashSet<Character> set = new HashSet<>();
+//        StringBuilder result = new StringBuilder();
+        String result = "";
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (set.add(ch)){
+              result = result + ch;
             }
         }
-
-        // If no match is found
-        return false;
+        return result;
     }
+
+
 }
+
+/*
+    weak hash map
+        identity hash map
+        hash table
+        object class method
+garbej collector :- when they is no referance for a object
+        using new keywork string and without new keyword and how many objects created*/
