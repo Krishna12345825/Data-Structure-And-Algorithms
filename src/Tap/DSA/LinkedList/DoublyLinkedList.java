@@ -79,6 +79,32 @@ class Dll {
         }
     }
 
+    void removeFirst(){
+        if (this.head == null){
+
+        } else if (this.head.next == null) {
+            this.head = null;
+            this.tail = null;
+        } else if (this.head.next != null) {
+            Node1 current = this.head;
+            this.head = this.head.next;
+            this.head.prev = null;
+            current.next = null;
+        }
+    }
+
+    void removeLast(){
+        if (this.head == null){
+        } else if (this.head.next == null) {
+            this.head = null;
+            this.tail = null;
+        } else if (this.head.next != null) {
+            Node1 current = tail;
+            tail = tail.prev;
+            current.prev = null;
+            tail.next = null;
+        }
+    }
 
 }
 
@@ -109,6 +135,12 @@ public class DoublyLinkedList {
 
         int []arr = {1,2,3,4,5,6};
         list.addAll(arr);
+        list.print();
+
+        list.removeFirst();
+        list.print();
+
+        list.removeLast();
         list.print();
     }
 }
