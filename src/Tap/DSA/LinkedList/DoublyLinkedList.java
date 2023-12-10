@@ -28,6 +28,15 @@ class Dll {
         }
     }
 
+    void print(){
+        Node1 current = this.head;
+        while (current != null){
+            System.out.print(current.data+ " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
 }
 
 public class DoublyLinkedList {
@@ -47,6 +56,7 @@ public class DoublyLinkedList {
 //        System.out.println(list.head.data);
 //        System.out.println(list.tail.data);
 
+        list.print();
 
     }
 }
