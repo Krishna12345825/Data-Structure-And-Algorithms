@@ -58,6 +58,28 @@ class Dll {
         }
     }
 
+    void addIndex(int length, int data){
+        Node1 temp = new Node1(data);
+
+        int count = 0;
+        Node1 current = this.head;
+        while (count < length -1){
+            current = current.next;
+            count++;
+        }
+        current.next.prev = temp;
+        temp.next = current.next;
+        current.next = temp;
+        temp.prev = current;
+    }
+
+    void addAll(int [] elements){
+        for (int element : elements){
+            this.add(element);
+        }
+    }
+
+
 }
 
 public class DoublyLinkedList {
@@ -82,5 +104,11 @@ public class DoublyLinkedList {
         list.addFirst(50);
         list.print();
 
+        list.addIndex(4, 33);
+        list.print();
+
+        int []arr = {1,2,3,4,5,6};
+        list.addAll(arr);
+        list.print();
     }
 }
