@@ -1,43 +1,96 @@
 package Tap.DSA.LinkedList.SingleLinkedList;
 
-class Node{
+class Node {
     int data;
     Node next;
 
-    public Node(int data){
+    public Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
-class LinkedList{
+class LinkedList {
     Node head;
-     void printLinkedList(){
+
+    void printLinkedList() {
         Node temp = this.head;
-        while (temp != null){
+        while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
     }
+
+
+    void add(int data) {
+        Node temp = new Node(data);
+        if (head == null) {
+            head = temp;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = temp;
+        }
+    }
+
+    void addFirst(int data) {
+        Node temp = new Node(data);
+        if (head == null) {
+            head = temp;
+        } else {
+            temp.next = head;
+            head = temp;
+        }
+    }
+
+    void addLast(int index, int data) throws ArrayIndexOutOfBoundsException {
+        try {
+            if (index == 0) {
+                addFirst(data);
+            } else {
+                Node temp = new Node(data);
+                int count = 0;
+                Node current = this.head;
+                while (count < index - 1) {
+                    current = current.next;
+                    count++;
+                }
+                temp.next = current.next;
+                current.next = temp;
+            }
+        } catch (NullPointerException e) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+    }
+
+
 }
+
 public class SingleLinkedList {
     public static void main(String[] args) {
-      LinkedList list =  new LinkedList();
-        Node p1 = new Node(10);
+        LinkedList list = new LinkedList();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+//        list.printLinkedList();
+        list.addFirst(50);
+//        list.printLinkedList();
+        list.addLast(3, 25);
+        list.printLinkedList();
+       /* Node p1 = new Node(10);
         Node p2 = new Node(20);
         Node p3 = new Node(30);
         Node p4 = new Node(40);
 
-       // System.out.println(p1.data);
+        // System.out.println(p1.data);
         p1.next = p2;
         p2.next = p3;
         p3.next = p4;
-
-       list.head =  p1;
-       list.printLinkedList();
-
-
-
+        list.head = p1;
+        list.printLinkedList();*/
 
 
     }
