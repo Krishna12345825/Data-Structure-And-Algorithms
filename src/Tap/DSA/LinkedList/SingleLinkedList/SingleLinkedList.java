@@ -122,6 +122,15 @@ class LinkedList {
         return index;
     }
 
+    int size() {
+        Node current = head;
+        int count = 0;
+        while (current != null) {
+            current = current.next;
+            count++;
+        }
+        return count;
+    }
 
 
 }
@@ -161,7 +170,7 @@ public class SingleLinkedList {
 
         System.out.println(list.lastIndexOf(9));
 
-
+        System.out.println(list.size());
 
 
 
