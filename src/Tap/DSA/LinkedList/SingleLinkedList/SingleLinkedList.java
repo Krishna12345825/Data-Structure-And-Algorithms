@@ -71,6 +71,20 @@ class LinkedList {
         }
     }
 
+    void removeFirst(){
+        if (head == null){
+        } else if (head.next == null) {
+            head = null;
+        }else if (head.next != null){
+            Node current = head;
+            head = head.next;
+            current.next = null;
+        }
+    }
+
+
+
+
 }
 
 public class SingleLinkedList {
@@ -80,17 +94,24 @@ public class SingleLinkedList {
         list.add(10);
         list.add(20);
         list.add(30);
-//        list.printLinkedList();
+        list.printLinkedList();
+
+        System.out.println();
         list.addFirst(50);
-//        list.printLinkedList();
+        list.printLinkedList();
+
+        System.out.println();
         list.addLast(3, 25);
-//        list.printLinkedList();
+        list.printLinkedList();
 
-
+        System.out.println();
         int []arr = {1,2,3,4,5,6,7,8};
         list.addAll(arr);
         list.printLinkedList();
 
+        System.out.println();
+        list.removeFirst();
+        list.printLinkedList();
 
 
 
