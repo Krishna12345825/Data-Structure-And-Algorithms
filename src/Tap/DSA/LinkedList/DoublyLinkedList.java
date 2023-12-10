@@ -37,6 +37,27 @@ class Dll {
         System.out.println();
     }
 
+    void printReverse(){
+        Node1 current = this.tail;
+        while (current != null){
+            System.out.print(current.data + " ");
+            current = current.prev;
+        }
+        System.out.println();
+    }
+
+    void addFirst(int data){
+        Node1 temp = new  Node1(data);
+        if (this.head == null){
+            this.head = temp;
+            this.tail = temp;
+        }else {
+            temp.next = head;
+            head.prev = temp;
+            head = temp;
+        }
+    }
+
 }
 
 public class DoublyLinkedList {
@@ -56,6 +77,9 @@ public class DoublyLinkedList {
 //        System.out.println(list.head.data);
 //        System.out.println(list.tail.data);
 
+        list.print();
+        list.printReverse();
+        list.addFirst(50);
         list.print();
 
     }
