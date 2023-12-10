@@ -108,6 +108,22 @@ class LinkedList {
         return -1;
     }
 
+    int lastIndexOf(int element) {
+        Node current = head;
+        int count = 0;
+        int index = -1;
+        while (current != null) {
+            if (current.data == element) {
+                index = count;
+            }
+            current = current.next;
+            count++;
+        }
+        return index;
+    }
+
+
+
 }
 
 public class SingleLinkedList {
@@ -143,6 +159,7 @@ public class SingleLinkedList {
         System.out.println();
         System.out.println(list.indexOf(3));
 
+        System.out.println(list.lastIndexOf(9));
 
 
 
