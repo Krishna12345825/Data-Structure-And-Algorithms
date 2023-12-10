@@ -65,6 +65,11 @@ class LinkedList {
         }
     }
 
+    void addAll(int []elements){
+        for(int element : elements ){
+            add(element);
+        }
+    }
 
 }
 
@@ -79,7 +84,20 @@ public class SingleLinkedList {
         list.addFirst(50);
 //        list.printLinkedList();
         list.addLast(3, 25);
+//        list.printLinkedList();
+
+
+        int []arr = {1,2,3,4,5,6,7,8};
+        list.addAll(arr);
         list.printLinkedList();
+
+
+
+
+
+
+
+
        /* Node p1 = new Node(10);
         Node p2 = new Node(20);
         Node p3 = new Node(30);
