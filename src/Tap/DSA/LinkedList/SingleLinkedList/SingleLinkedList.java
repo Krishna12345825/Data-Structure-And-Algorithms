@@ -45,7 +45,7 @@ class LinkedList {
         }
     }
 
-    void addLast(int index, int data) throws ArrayIndexOutOfBoundsException {
+    void addLast(int index, int data) throws IndexOutOfBoundsException {
         try {
             if (index == 0) {
                 addFirst(data);
@@ -61,7 +61,7 @@ class LinkedList {
                 current.next = temp;
             }
         } catch (NullPointerException e) {
-            throw new ArrayIndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException();
         }
     }
 
