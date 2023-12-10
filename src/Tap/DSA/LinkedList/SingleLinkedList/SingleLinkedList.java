@@ -65,25 +65,48 @@ class LinkedList {
         }
     }
 
-    void addAll(int []elements){
-        for(int element : elements ){
+    void addAll(int[] elements) {
+        for (int element : elements) {
             add(element);
         }
     }
 
-    void removeFirst(){
-        if (head == null){
+    void removeFirst() {
+        if (head == null) {
         } else if (head.next == null) {
             head = null;
-        }else if (head.next != null){
+        } else if (head.next != null) {
             Node current = head;
             head = head.next;
             current.next = null;
         }
     }
 
+    void removeLast() {
+        if (head == null) {
+        } else if (head.next == null) {
+            head = null;
+        } else if (head.next != null) {
+            Node current = head;
+            while (current.next.next != null) {
+                current = current.next;
+            }
+            current.next = null;
+        }
+    }
 
-
+    int indexOf(int element) {
+        Node current = head;
+        int count = 0;
+        while (current != null) {
+            if (current.data == element) {
+                return count;
+            }
+            current = current.next;
+            count++;
+        }
+        return -1;
+    }
 
 }
 
@@ -105,7 +128,7 @@ public class SingleLinkedList {
         list.printLinkedList();
 
         System.out.println();
-        int []arr = {1,2,3,4,5,6,7,8};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         list.addAll(arr);
         list.printLinkedList();
 
@@ -113,6 +136,12 @@ public class SingleLinkedList {
         list.removeFirst();
         list.printLinkedList();
 
+        System.out.println();
+        list.removeLast();
+        list.printLinkedList();
+
+        System.out.println();
+        System.out.println(list.indexOf(3));
 
 
 
