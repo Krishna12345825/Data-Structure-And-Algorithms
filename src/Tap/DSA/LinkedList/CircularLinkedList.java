@@ -45,6 +45,7 @@ class Cll {
     }
 
 
+//    efficiant approach o(1);
     void addEfficiantApproach(int element){
         Node3 temp = new Node3(element);
         if (this.head == null){
