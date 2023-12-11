@@ -60,6 +60,22 @@ class Cll {
         }
     }
 
+    void addLast(int element){
+        Node3 temp = new Node3(element);
+        if (head == null){
+            head = temp;
+            head.next = head;
+        }else {
+            Node3 current = head.next;
+            while (current.next != head){
+                current = current.next;
+                current.next = temp;
+                temp.next = head;
+            }
+        }
+    }
+
+
 
 }
 
@@ -67,18 +83,20 @@ public class CircularLinkedList {
     public static void main(String[] args) {
         Cll cll = new Cll();
 
-        cll.head = new Node3(10);
-        cll.head.next = new Node3(20);
-        cll.head.next.next = new Node3(30);
-        cll.head.next.next.next = new Node3(40);
-        cll.head.next.next.next.next = cll.head;
-        cll.print();
+//        cll.head = new Node3(10);
+//        cll.head.next = new Node3(20);
+//        cll.head.next.next = new Node3(30);
+//        cll.head.next.next.next = new Node3(40);
+//        cll.head.next.next.next.next = cll.head;
+//        cll.print();
 
         cll.addFirst(1);
         cll.addFirst(2);
         cll.addFirst(3);
         cll.print();
         cll.addEfficiantApproach(33);
+        cll.print();
+        cll.addLast(35);
         cll.print();
 
     }
