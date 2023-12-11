@@ -48,7 +48,6 @@ public class Q11 {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
          rearrange(s);
-
     }
 }
 
