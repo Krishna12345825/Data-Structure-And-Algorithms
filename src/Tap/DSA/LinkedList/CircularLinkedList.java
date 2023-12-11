@@ -75,6 +75,20 @@ class Cll {
         }
     }
 
+    void addLastEfficiantApproach(int element){
+        Node3 temp = new Node3(element);
+        if (this.head == null){
+            this.head = temp;
+            this.head.next = head;
+        }else {
+            temp.next = this.head.next;
+            this.head.next = temp;
+            int t = temp.data;
+            temp.data = this.head.data;
+            this.head.data = t;
+            this.head = this.head.next;
+        }
+    }
 
 
 }
@@ -97,6 +111,9 @@ public class CircularLinkedList {
         cll.addEfficiantApproach(33);
         cll.print();
         cll.addLast(35);
+        cll.print();
+        cll.addLastEfficiantApproach(70);
+        cll.addLastEfficiantApproach(72);
         cll.print();
 
     }
