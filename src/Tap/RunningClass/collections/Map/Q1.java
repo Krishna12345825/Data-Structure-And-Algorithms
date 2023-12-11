@@ -1,20 +1,23 @@
 package Tap.RunningClass.collections.Map;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Q1 {
 
     public static void main(String[] args) {
 
 //        HashMap map = new HashMap<>();
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
+//        HashMap<String, Integer> map = new HashMap<String, Integer>();
+//        LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+        TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+
+
         map.put("india", 900);
         map.put("china", 9700);
         map.put("usa", 8900);
         map.put("uk", 8769);
+        map.put("india", 900);
+        map.put("usa", 8900);
 //        map.put(true, false);
 //        map.put(3.14, new ArrayList<>());
 //        System.out.println(map);
@@ -29,12 +32,10 @@ public class Q1 {
 
 
         Set<String> keys = map.keySet();
-        for (String key : keys){
+        for (String key : keys) {
             Integer value = map.get(key);
             System.out.println(key + " : " + value);
         }
-
-
 
 
     }
