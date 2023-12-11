@@ -45,13 +45,13 @@ class Cll {
     }
 
 
-//    efficiant approach o(1);
-    void addEfficiantApproach(int element){
+    //    efficiant approach o(1);
+    void addEfficiantApproach(int element) {
         Node3 temp = new Node3(element);
-        if (this.head == null){
+        if (this.head == null) {
             this.head = temp;
             this.head.next = head;
-        }else {
+        } else {
             temp.next = this.head.next;
             this.head.next = temp;
             int t = temp.data;
@@ -60,14 +60,14 @@ class Cll {
         }
     }
 
-    void addLast(int element){
+    void addLast(int element) {
         Node3 temp = new Node3(element);
-        if (head == null){
+        if (head == null) {
             head = temp;
             head.next = head;
-        }else {
+        } else {
             Node3 current = head.next;
-            while (current.next != head){
+            while (current.next != head) {
                 current = current.next;
                 current.next = temp;
                 temp.next = head;
@@ -75,12 +75,12 @@ class Cll {
         }
     }
 
-    void addLastEfficiantApproach(int element){
+    void addLastEfficiantApproach(int element) {
         Node3 temp = new Node3(element);
-        if (this.head == null){
+        if (this.head == null) {
             this.head = temp;
             this.head.next = head;
-        }else {
+        } else {
             temp.next = this.head.next;
             this.head.next = temp;
             int t = temp.data;
@@ -89,6 +89,23 @@ class Cll {
             this.head = this.head.next;
         }
     }
+
+    void removeFirst() {
+        if (head == null) {
+
+        } else if (head == head.next) {
+            head = null;
+        } else if (head.next != head) {
+            Node3 current = head.next;
+            while (current.next != head) {
+                current = current.next;
+                current.next = head.next;
+                head = head.next;
+            }
+        }
+    }
+
+
 
 
 }
@@ -114,6 +131,8 @@ public class CircularLinkedList {
         cll.print();
         cll.addLastEfficiantApproach(70);
         cll.addLastEfficiantApproach(72);
+        cll.print();
+        cll.removeFirst();
         cll.print();
 
     }
