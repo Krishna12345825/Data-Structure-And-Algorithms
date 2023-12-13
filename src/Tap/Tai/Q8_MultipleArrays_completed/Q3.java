@@ -1,31 +1,32 @@
-package Tap.Tai.Q8_MultipleArrayscompleted;
-
+package Tap.Tai.Q8_MultipleArrays_completed;
 
 /*
-Repeated Even Elements
+
+Common Repeating Odd Elements in Sorted Arrays
 input1:-
-7
-2 4 5 6 8 10 12
-6
-4 6 6 8 10 12
+5
+1 2 3 4 5
+5
+3 4 5 6 7
 output1:-
-4 6 8 10 12
+1 5
+
 
 input2:-
-6
-2 4 6 8 10 12
 4
-3 6 8 12
-output2:-
-6 8 12
+2 4 6 8
+4
+1 3 5 7
 
+output2:-
+No commom odd elements found.
 
 */
 
 
 import java.util.Scanner;
 
-public class Q4not {
+public class Q3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n1 = scanner.nextInt();
@@ -38,27 +39,27 @@ public class Q4not {
         for (int j = 0; j < arr2.length; j++) {
             arr2[j] = scanner.nextInt();
         }
-        repeatingEvenElements(arr1, arr2);
-
+        commonRepeatingOddElements(arr1, arr2);
     }
 
-    static void repeatingEvenElements(int arr1[], int arr2[]){
+    static void commonRepeatingOddElements(int arr1[], int arr2[]){
         int i = 0;
         int j = 0;
+        boolean isTrue = false;
         while (i < arr1.length && j < arr2.length){
-            if (arr1[i]%2==0 && arr2[j]%2==0){
-                if (arr1[i] == arr2[j]){
-                    System.out.print(arr1[i] + " ");
-                }
+            if (arr1[i]%2!=0 && arr2[j]%2!=0){
+                System.out.print(arr1[i]+" ");
                 i++;
                 j++;
+                isTrue = true;
             } else if (arr1[i] < arr2[j]) {
                 i++;
             }else {
                 j++;
             }
         }
+        if (!isTrue){
+            System.out.print("No commom odd elements found.");
+        }
     }
-
-
 }

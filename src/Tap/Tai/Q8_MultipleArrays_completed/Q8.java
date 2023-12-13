@@ -1,4 +1,4 @@
-package Tap.Tai.Q8_MultipleArrayscompleted;
+package Tap.Tai.Q8_MultipleArrays_completed;
 
 import java.util.Scanner;
 
