@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 
 /*
+
+All Possible SubArrays
 input1:-
 3
 1 2 3
