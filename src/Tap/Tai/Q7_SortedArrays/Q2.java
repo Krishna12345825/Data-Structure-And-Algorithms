@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /*
-First Element Not in Sorting order
+Common Repeating Odd Elements in sorted Arrays
 input1:-
 5
 1 2 3 4 5
