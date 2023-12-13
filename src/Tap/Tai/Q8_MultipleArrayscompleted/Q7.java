@@ -1,4 +1,4 @@
-package Tap.Tai.Q8_MultipleArrays;
+package Tap.Tai.Q8_MultipleArrayscompleted;
 
 import java.util.Scanner;
 
@@ -6,25 +6,23 @@ import java.util.Scanner;
 /*Repeated Elements in two Sorted Arrays
 input1:-
 6
-2 4 5 5 7 8
-7
-2 3 5 5 6 7 8
-output:-
-2 5 5 7 8
+9 8 7 6 5 4
+5
+4 5 6 7 8
+output1:-
+4 5 6 7 8
 
 input2:-
-5
-1 2 3 4 5
-5
-2 3 4 5 6
-
+7
+10 8 6 4 2 2 0
+6
+0 1 2 3 4 5
 output2:-
-2 3 4 5
+0 2 4
 */
 
 
-
-public class Q5 {
+public class Q7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n1 = scanner.nextInt();
@@ -41,16 +39,16 @@ public class Q5 {
     }
 
     static void sortedArray(int arr1[], int arr2[]){
-        int i = 0;
+        int i = arr1.length-1;
         int j = 0;
 
-        while (i < arr1.length && j < arr2.length){
+        while (i >= 0 && j < arr2.length){
            if (arr1[i] == arr2[j]){
                System.out.print(arr1[i]+" ");
-               i++;
+               i--;
                j++;
            } else if (arr1[i] < arr2[j]) {
-               i++;
+               i--;
            }else {
                j++;
            }
