@@ -1,7 +1,6 @@
-package Tap.RunningClass.collections;
+package Tap.RunningClass.collections.Costom_Sorting;
 
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.Scanner;
 
 class Employee3{

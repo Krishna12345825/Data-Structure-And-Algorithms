@@ -1,10 +1,9 @@
-package Tap.RunningClass.collections;
+package Tap.RunningClass.collections.Costom_Sorting;
 
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.TreeSet;
 
 class MyCompare3 implements Comparator<Integer> {
 
