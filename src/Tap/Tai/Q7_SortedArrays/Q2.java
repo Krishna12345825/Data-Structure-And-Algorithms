@@ -19,7 +19,8 @@ input:-
 4
 1 3 5 7
 output:-
-No Commom Odd Elements Dound.
+No Commom Odd Elements found.
+
 */
 
 
