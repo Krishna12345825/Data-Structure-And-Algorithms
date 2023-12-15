@@ -2,30 +2,19 @@ import java.util.*;
 
 class Demo {
     public static void main(String[] args) {
-       String s = "mississippi";
-      String s1 = removeDuplicates(s);
-        System.out.println(s1);
+     int n = 6;
+        System.out.println(isPrime(n));
     }
-    static String removeDuplicates(String s){
-        HashSet<Character> set = new HashSet<>();
-//        StringBuilder result = new StringBuilder();
-        String result = "";
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (set.add(ch)){
-              result = result + ch;
+    static boolean isPrime(int n){
+        if (n <= 1){
+            return false;
+        }
+        for (int i = 2; i *i<= n; i++) {
+            if (n%i==0){
+                return false;
             }
         }
-        return result;
+        return true;
     }
-
-
 }
 
-/*
-    weak hash map
-        identity hash map
-        hash table
-        object class method
-garbej collector :- when they is no referance for a object
-        using new keywork string and without new keyword and how many objects created*/

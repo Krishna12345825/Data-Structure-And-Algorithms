@@ -18,6 +18,7 @@ public class Q1 {
         map.put("uk", 8769);
         map.put("india", 900);
         map.put("usa", 8900);
+
 //        map.put(true, false);
 //        map.put(3.14, new ArrayList<>());
 //        System.out.println(map);

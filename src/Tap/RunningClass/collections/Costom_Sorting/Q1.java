@@ -3,6 +3,10 @@ package Tap.RunningClass.collections.Costom_Sorting;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+garbej collector :- when they is no referance for a object
+* */
+
 class  Employee{
     private int id;
     private String name;
