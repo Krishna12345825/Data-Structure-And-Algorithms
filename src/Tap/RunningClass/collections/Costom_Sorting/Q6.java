@@ -127,6 +127,7 @@ public class Q6 {
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             String s = sc.next();
+
             String arr[] = s.split(",");
             int id = 1001 + i;
             String name = arr[0];
