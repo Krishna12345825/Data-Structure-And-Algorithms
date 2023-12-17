@@ -26,7 +26,7 @@ public class Q3 {
 
     static void countLongestConsecutiveSubArray(int arr[]) {
         int count = 1;
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i + 1] - arr[i] == 1) {
                 count++;
