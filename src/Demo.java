@@ -2,48 +2,57 @@ import java.util.*;
 
 class Demo {
     public static void main(String[] args) {
-        Scanner sc  = new Scanner(System.in);
-        String s = sc.nextLine();
-        String arr[] = split(s);
-        for (int i = 0, j = arr.length-1; i < j; i++, j--) {
-
-            System.out.print(reverse(arr[j])+ arr[i]+" ");
-        }
-
-    }
-    static String reverse(String s){
-        String t = "";
-        for (int i = 0; i<s.length(); i++){
-            t = s.charAt(i) + t;
-        }
-        return t;
+        Scanner scanner = new Scanner(System.in);
+        String   s1 = scanner.nextLine();
+        String   s2 = scanner.nextLine();
+        System.out.println(stringEquals(s1, s2));
     }
 
-    static String[] split(String s){
-        int n = countWord(s);
-        String t = "";
-        int j = 0;
-        String arr[] = new String[n];
-        for (int i = 0; i<s.length(); i++){
-            if (s.charAt(i) != ' '){
-                t = t + s.charAt(i);
-            } else if (t.length() > 0) {
-                arr[j] = t;
-                j++;
-                t = "";
+    static boolean stringEquals(String s1, String s2){
+        if (s1.length() != s2.length()){
+            return false;
+        }
+        int i = 0;
+        while (i < s1.length()){
+            if (s1.charAt(i) == s2.charAt(i)){
+                i++;
+            }else {
+                return false;
             }
         }
-        arr[j] = t;
-        return arr;
+        return true;
     }
-    static int countWord(String s){
-        int count = 0;
-        for(int i = 0; i<s.length()-1; i++){
-            if(s.charAt(i) == ' ' && s.charAt(i+1) != ' '){
-                count++;
+
+    static void printSubString(String s){
+        for (int size = s.length(); size >=0; size--){
+            for (int i = 0; i <s.length() - size; i++){
+                String t = "";
+                for (int j = i; j<= i+size; j++){
+                   t = t+s.charAt(j);
+                }
+                if (isPalindrome(t)){
+                    System.out.println(t);
+                    return;
+                }
             }
         }
-        return s.charAt(0)== ' ' ? count : count+1;
     }
+
+    static boolean isPalindrome(String s){
+        int i = 0;
+        int j = s.length()-1;
+        while (i <= j){
+            if (s.charAt(i) == s.charAt(j)){
+                i++;
+                j--;
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
 }
 
