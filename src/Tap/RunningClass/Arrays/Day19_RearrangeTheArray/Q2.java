@@ -23,28 +23,28 @@ public class Q2 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int arr[] = new int[n];
-        for (int i =0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
         }
         int res[] = rearrange(arr);
-        for (int i=0; i<res.length; i++){
+        for (int i = 0; i < res.length; i++) {
             System.out.print(res[i] + " ");
         }
     }
 
-    static int[] rearrange(int arr[]){
+    static int[] rearrange(int arr[]) {
         int i = 0;
         int j = 0;
-        while (i < arr.length){
-            if (arr[i] == 0){
+        while (i < arr.length) {
+            if (arr[i] == 0) {
                 i++;
-            }else {
+            } else {
                 arr[j] = arr[i];
                 i++;
                 j++;
             }
         }
-        while (j < arr.length){
+        while (j < arr.length) {
             arr[j] = 0;
             j++;
         }
