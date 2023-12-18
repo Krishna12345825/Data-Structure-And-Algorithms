@@ -50,7 +50,7 @@ public class Q3 {
                 result[k] = arr2[j];
                 j++;
                 k++;
-            }else if (arr1[i] < arr2[j]){
+            }else{
                 result[k] = arr1[i];
                 i++;
                 k++;
