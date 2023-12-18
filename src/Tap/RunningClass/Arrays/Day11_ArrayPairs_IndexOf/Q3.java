@@ -9,8 +9,8 @@ import java.util.Scanner;
 3 4 1 2 5
 6
 output:-
-
 -1
+
 * */
 
 public class Q3 {
