@@ -1,28 +1,20 @@
 package Tap.RunningClass.Arrays.Day11_ArrayPairs_IndexOf;
 
 import java.util.Scanner;
-
 /*
-   print all pairs
-   input:
+
+  pair sum
+  input:-
 5
 3 4 1 2 5
-
+6
 output:-
-
-3 4
-3 1
-3 2
-3 5
-4 1
 4 2
-4 5
-1 2
 1 5
-2 5
+
 * */
 
-public class Q1 {
+public class Q2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -30,15 +22,17 @@ public class Q1 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
         }
-        printAllPairs(arr);
+        int k = scanner.nextInt();
+        printPairsSum(arr, k);
     }
 
-    static void printAllPairs(int arr[]){
+    static void printPairsSum(int arr[], int k){
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                System.out.println(arr[i] + " " + arr[j]);
+               if (arr[i] + arr[j] == k){
+                   System.out.println(arr[i] + " " + arr[j]);
+               }
             }
         }
     }
-
 }
