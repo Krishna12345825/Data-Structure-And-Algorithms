@@ -83,6 +83,7 @@ public class Q1 {
 }
 
 
-//alex,Hr,3000
-//bob,IT,5000
-//Jack,IT,3999
+/*
+alex,Hr,3000
+bob,IT,5000
+Jack,IT,3999*/

@@ -1,58 +1,66 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+class Employee implements Comparable<Employee>{
+    private int id;
+    private String name;
+    private String department;
+    private int salary;
+
+    public Employee(int id, String name, String department, int salary){
+        this.id = id;
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
+    }
+
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getDepartment(){
+        return department;
+    }
+    public int getSalary(){
+        return salary;
+    }
+    @Override
+    public int compareTo(Employee e2){
+        Employee  e1 = this;
+        int salary1 = e1.salary;
+        int salary2 = e2.salary;
+      return salary2 - salary1;
+    }
+}
 
 class Demo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String   s1 = scanner.nextLine();
-        String   s2 = scanner.nextLine();
-        System.out.println(stringEquals(s1, s2));
-    }
-
-    static boolean stringEquals(String s1, String s2){
-        if (s1.length() != s2.length()){
-            return false;
+      TreeSet<Employee>  employees = new TreeSet<Employee>();
+        int n = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            String s = scanner.next();
+            String arr[] = s.split(",");
+            int id = 1001 + i;
+            String name = arr[0];
+            String department = arr[1];
+            int salary = Integer.parseInt(arr[2]);
+            Employee emp = new Employee(id, name, department, salary);
+            employees.add(emp);
         }
-        int i = 0;
-        while (i < s1.length()){
-            if (s1.charAt(i) == s2.charAt(i)){
-                i++;
-            }else {
-                return false;
-            }
+
+        for (Employee employee : employees){
+            System.out.println(employee.getId() + "  " + employee.getName() + "  " + employee.getDepartment() + "  " + employee.getSalary());
         }
-        return true;
+
     }
-
-    static void printSubString(String s){
-        for (int size = s.length(); size >=0; size--){
-            for (int i = 0; i <s.length() - size; i++){
-                String t = "";
-                for (int j = i; j<= i+size; j++){
-                   t = t+s.charAt(j);
-                }
-                if (isPalindrome(t)){
-                    System.out.println(t);
-                    return;
-                }
-            }
-        }
-    }
-
-    static boolean isPalindrome(String s){
-        int i = 0;
-        int j = s.length()-1;
-        while (i <= j){
-            if (s.charAt(i) == s.charAt(j)){
-                i++;
-                j--;
-            }else{
-                return false;
-            }
-        }
-        return true;
-    }
-
-
-
 }
+/*
 
+alex,IT,3000
+bob,IT,5000
+Jack,IT,3999
+*/

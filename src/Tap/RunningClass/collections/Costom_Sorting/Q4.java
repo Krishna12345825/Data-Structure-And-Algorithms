@@ -52,15 +52,15 @@ class Employee4 implements  Comparable<Employee4>{
     }
 
 
-    @Override
-    public String toString() {
-        return "Employee4{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", Department='" + Department + '\'' +
-                ", Salary=" + Salary +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Employee4{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", Department='" + Department + '\'' +
+//                ", Salary=" + Salary +
+//                '}';
+//    }
 
     @Override
     public int compareTo(Employee4 e2) {
@@ -102,8 +102,12 @@ public class Q4 {
             Employee4 employee4 = new Employee4(id, name, department, salary);
             treeSet.add(employee4);
         }
-        for (Employee4 employee4 : treeSet){
-            System.out.println(employee4);
+//        for (Employee4 employee4 : treeSet){
+//            System.out.println(employee4);
+//        }
+
+        for(Employee4 employee4 : treeSet){
+            System.out.println(employee4.getId() + " " + employee4.getName() + " " + employee4.getDepartment() +" " + employee4.getSalary());
         }
     }
 
