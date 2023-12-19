@@ -121,8 +121,11 @@ public class Q5 {
 
 //name and salary are same so that they are sorting based on id
 
-//       alex,Hr,3000
-//        bob,IT,5000
-//        Jack,IT,7000
-//        jill,IT,5000
-//        bob,HR,5000
+/*
+
+alex,Hr,3000
+bob,IT,5000
+Jack,IT,7000
+jill,IT,5000
+bob,HR,5000
+*/

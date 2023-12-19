@@ -2,37 +2,44 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-class Employee implements Comparable<Employee>{
+class Employee implements Comparable<Employee> {
     private int id;
     private String name;
     private String department;
     private int salary;
 
-    public Employee(int id, String name, String department, int salary){
+    public Employee(int id, String name, String department, int salary) {
         this.id = id;
         this.name = name;
         this.department = department;
         this.salary = salary;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getDepartment(){
+
+    public String getDepartment() {
         return department;
     }
-    public int getSalary(){
+
+    public int getSalary() {
         return salary;
     }
+
     @Override
-    public int compareTo(Employee e2){
-        Employee  e1 = this;
+    public int compareTo(Employee e2) {
+        Employee e1 = this;
         int salary1 = e1.salary;
         int salary2 = e2.salary;
-      return salary2 - salary1;
+        String name1 = e1.name;
+        String name2 = e2.name;
+
+        return salary2 - salary1;
     }
 }
 
