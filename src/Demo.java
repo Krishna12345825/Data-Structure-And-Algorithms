@@ -38,8 +38,13 @@ class Employee implements Comparable<Employee> {
         int salary2 = e2.salary;
         String name1 = e1.name;
         String name2 = e2.name;
-
-        return salary2 - salary1;
+        if (salary1 != salary2){
+            return salary2 - salary1;
+        }else if (name1.compareTo(name2) != 0){
+            return name1.compareTo(name2);
+        }else {
+            return e1.id - e2.id;
+        }
     }
 }
 

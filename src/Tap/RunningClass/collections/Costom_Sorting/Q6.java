@@ -35,7 +35,6 @@ class MyCompare1 implements Comparator<Employee6> {
             return name1.compareTo(name2);
         }else {
             return e1.getId() -  e2.getId();
-
         }
     }
 }
@@ -114,16 +113,20 @@ class Employee6 implements Comparable<Employee6> {
         }else {
             return e1.id - e2.id;
         }
+
+
+
+
     }
 }
 
 public class Q6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        MyCompare1 compare1 = new MyCompare1();
-        MyCompare2 compare1 = new MyCompare2();
-//        TreeSet<Employee6> treeSet = new TreeSet<Employee6>(compare1);
-        ArrayList<Employee6> treeSet = new ArrayList<>();
+        MyCompare1 compare1 = new MyCompare1();
+//        MyCompare2 compare1 = new MyCompare2();
+        TreeSet<Employee6> treeSet = new TreeSet<Employee6>(compare1);
+//        ArrayList<Employee6> treeSet = new ArrayList<>();
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             String s = sc.next();
@@ -141,24 +144,30 @@ public class Q6 {
             System.out.println(emp);
         }
 
-        System.out.println("After Sorting");
-        Collections.sort(treeSet);
-        for (Employee6 emp : treeSet){
-            System.out.println(emp);
-        }
+//        System.out.println("After Sorting");
+//        Collections.sort(treeSet);
+//        for (Employee6 emp : treeSet){
+//            System.out.println(emp);
+//        }
 
 
-        System.out.println("After Customised Sorting");
-        Collections.sort(treeSet, compare1);
-        for (Employee6 emp : treeSet){
-            System.out.println(emp);
-        }
+//        System.out.println("After Customised Sorting");
+//        Collections.sort(treeSet, compare1);
+//        for (Employee6 emp : treeSet){
+//            System.out.println(emp);
+//        }
+
+
     }
 }
 
+/*
 
-//       alex,Hr,3000
-//        bob,IT,5000
-//        jack,IT,2000
-//        bob,IT,5000
-//        jack,IT,5000
+alex,Hr,3000
+bob,IT,5000
+jack,IT,2000
+bob,IT,5000
+jack,IT,5000
+
+*/
+
