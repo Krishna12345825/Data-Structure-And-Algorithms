@@ -3,24 +3,31 @@ import java.util.Scanner;
 class Demo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine();
-        String s2 = sc.nextLine();
-        int s3 = check(s1, s2);
-        System.out.println(s3);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int targest = sc.nextInt();
+        int ans = binarySearch(arr, targest);
+        System.out.println(ans);
+
     }
-    static int check(String s1, String s2){
-        int size = s2.length();
-        int count = 0;
-        for (int i = 0; i < s1.length() - size; i++) {
-            String t = "";
-            for (int j = i; j < i + size; j++) {
-                t = t + s1.charAt(j);
-            }
-            if (t.equals(s2)){
-                count++;
+    static int binarySearch(int arr[], int target){
+        int start = 0;
+        int end = arr.length-1;
+        while (start <= end){
+            int mid = start + (end - start) /2;
+            if (target > arr[mid]){
+                start = mid + 1;
+            } else if (target < arr[mid]) {
+                end = mid - 1;
+            }else {
+                return mid;
             }
         }
-        return count;
+        return -1;
+
     }
 }
 
