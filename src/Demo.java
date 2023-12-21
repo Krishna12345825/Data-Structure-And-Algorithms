@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 class Demo {
@@ -8,26 +9,28 @@ class Demo {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        int targest = sc.nextInt();
-        int ans = binarySearch(arr, targest);
-        System.out.println(ans);
-
+        insersionSOort(arr);
+        System.out.println(Arrays.toString(arr));
     }
-    static int binarySearch(int arr[], int target){
-        int start = 0;
-        int end = arr.length-1;
-        while (start <= end){
-            int mid = start + (end - start) /2;
-            if (target > arr[mid]){
-                start = mid + 1;
-            } else if (target < arr[mid]) {
-                end = mid - 1;
-            }else {
-                return mid;
+
+    static void insersionSOort(int arr[]){
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = i + 1; j > 0; j--) {
+                if (arr[j] < arr[j-1]){
+                    swap(arr, j, j-1);
+                }else {
+                    break;
+                }
             }
         }
-        return -1;
-
     }
+
+    private static void swap(int[] arr, int i, int i1) {
+        int temp = arr[i];
+        arr[i] = arr[i1];
+        arr[i1] = temp;
+    }
+
+
 }
 

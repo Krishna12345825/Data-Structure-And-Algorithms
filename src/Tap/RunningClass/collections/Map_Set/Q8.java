@@ -1,4 +1,4 @@
-package Tap.RunningClass.collections.Map;
+package Tap.RunningClass.collections.Map_Set;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ input:-
 */
 
 
-public class Q9 {
+public class Q8 {
 
     static String rearrange(String s){
 //        HashMap<Character, Integer> map = new HashMap<>();
@@ -27,12 +27,12 @@ public class Q9 {
         }
         Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         String t = "";
+        int sum = 0;
         for (Map.Entry<Character, Integer> e : entries){
-            if (e.getValue() > 3){
-                t = t + e.getKey();
-            }
+            t = t + e.getKey();
+            sum = sum + e.getValue();
         }
-        return t;
+        return t + sum;
     }
 
 

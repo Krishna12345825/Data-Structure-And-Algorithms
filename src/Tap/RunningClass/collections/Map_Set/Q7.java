@@ -1,9 +1,6 @@
-package Tap.RunningClass.collections.Map;
+package Tap.RunningClass.collections.Map_Set;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 /*
 input:-
@@ -11,7 +8,7 @@ input:-
 */
 
 
-public class Q8 {
+public class Q7 {
 
     static String rearrange(String s){
 //        HashMap<Character, Integer> map = new HashMap<>();
@@ -25,14 +22,13 @@ public class Q8 {
                 map.put(ch, 1);
             }
         }
+
         Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         String t = "";
-        int sum = 0;
         for (Map.Entry<Character, Integer> e : entries){
-            t = t + e.getKey();
-            sum = sum + e.getValue();
+            t = t + e.getKey() + e.getValue();
         }
-        return t + sum;
+        return t;
     }
 
 
