@@ -30,6 +30,7 @@ public class Tree {
         postOrder(root);
         System.out.println();
         System.out.println(heightOf(root));
+        printKDistance(root, 2);
     }
 
 
@@ -68,6 +69,18 @@ public class Tree {
             int leftHeight = heightOf(root.left);
             int rightHeight = heightOf(root.right);
           return   (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
+        }
+    }
+
+//    print Nodes at Distance k
+    static void printKDistance(Node root, int k){
+        if (root != null){
+            if (k == 0){
+                System.out.print(root.data + " ");
+            }else {
+                printKDistance(root.left, k-1);
+                printKDistance(root.right, k-1);
+            }
         }
     }
 }
