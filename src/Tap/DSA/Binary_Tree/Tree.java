@@ -126,7 +126,7 @@ public class Tree {
     //    DFS(Defth first search) / Maximum in Binary tree
     static int max(Node root) {
         if (root == null) {
-            return -1;
+            return Integer.MAX_VALUE;
         } else {
             int leftMax = max(root.left);
             int rightMax = max(root.right);
