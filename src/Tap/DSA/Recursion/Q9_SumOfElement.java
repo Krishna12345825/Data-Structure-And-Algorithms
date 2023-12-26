@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 // Sum of all elements in an array.
-public class SumOfElement {
+public class Q9_SumOfElement {
     public static void main(String[] args) {
         int arr[] ={1,2,3,4,5};
         System.out.println(sumElements(arr,0));

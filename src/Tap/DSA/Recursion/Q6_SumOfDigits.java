@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class SumOfDigits {
+public class Q6_SumOfDigits {
     public static void main(String[] args) {
         System.out.println(sumOfDigits(12345));
     }

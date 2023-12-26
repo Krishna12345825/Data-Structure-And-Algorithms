@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class CountDigits {
+public class Q5_CountDigits {
     public static void main(String[] args) {
         System.out.println(countDigit(1234567));
     }

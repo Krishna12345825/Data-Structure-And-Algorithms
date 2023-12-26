@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class ReverseString {
+public class Q7_ReverseString {
     public static void main(String[] args) {
 
         String s="Krishna";

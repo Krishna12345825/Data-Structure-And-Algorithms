@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class Palidrom {
+public class Q8_Palidrom {
     public static void main(String[] args) {
         String s= "KAKA";
         System.out.println(palidrom(s,0,s.length()-1));
