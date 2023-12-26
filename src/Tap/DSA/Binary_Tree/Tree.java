@@ -61,6 +61,30 @@ public class Tree {
         System.out.println("Level Order Traversal_Line By Line (Approach1)");
         levelOrderLineByLine(root);
         System.out.println();
+
+        System.out.println("Level Order Traversal_Line By Line (Approach2)");
+        levelOrderLineByLine2(root);
+
+        System.out.println("Left View of Binary Tree");
+        leftView(root);
+        System.out.println();
+
+        System.out.println("Left View of Binary Tree");
+        levelOrderTraversal(root);
+        System.out.println();
+
+        System.out.println("Level Order Traversal_Right to left");
+        levelOrderTraversal(root);
+        System.out.println();
+
+        System.out.println("Level Order Traversal_Line By Line");
+        levelOrderTraversalLineByLine(root);
+        System.out.println();
+
+        System.out.println("Right view of a Binary Tree");
+        rightView(root);
+
+
     }
 
 
@@ -181,6 +205,118 @@ public class Tree {
         }
     }
 
+
+    //    Level Order Traversal_Line By Line (Approach2)
+    static void levelOrderLineByLine2(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            q.add(root);
+            while (q.size() > 0) {
+                int count = q.size();
+                for (int i = 0; i < count; i++) {
+                    Node current = q.poll();
+                    System.out.print(current.data + " ");
+                    if (current.left != null) {
+                        q.add(current.left);
+                    }
+                    if (current.right != null) {
+                        q.add(current.right);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+
+
+    //    Left View of Binary Tree
+    static void leftView(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            q.add(root);
+            while (q.size() > 0) {
+                int count = q.size();
+                for (int i = 0; i < count; i++) {
+                    Node current = q.poll();
+                    if (i == 0) {
+                        System.out.print(current.data + " ");
+                    }
+                    if (current.left != null) {
+                        q.add(current.left);
+                    }
+                    if (current.right != null) {
+                        q.add(current.right);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    //    Level Order Traversal_Right to left
+    static void levelOrderTraversal(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            q.add(root);
+            while (q.size() > 0) {
+                Node current = q.poll();
+                System.out.print(current.data + " ");
+                if (current.right != null) {
+                    q.add(current.right);
+                }
+                if (current.left != null) {
+                    q.add(current.left);
+                }
+            }
+        }
+    }
+
+
+    //    Level Order Traversal_Line By Line
+    static void levelOrderTraversalLineByLine(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            while (q.size() > 0) {
+                int count = q.size();
+                for (int i = 0; i < count; i++) {
+                    Node current = q.poll();
+                    System.out.print(current.data + " ");
+                    if (current.right != null) {
+                        q.add(current.right);
+                    }
+                    if (current.left != null) {
+                        q.add(current.left);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    //    Level Order Traversal_Line By Line
+    static void rightView(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            while (q.size() > 0) {
+                int count = q.size();
+                for (int i = 0; i < count; i++) {
+                    Node current = q.poll();
+
+                    if (i == count-1){
+                        System.out.print(current.data+" ");
+                    }
+
+                    if (current.left != null) {
+                        q.add(current.left);
+                    }
+                    if (current.right != null) {
+                        q.add(current.right);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
 
 }
 
