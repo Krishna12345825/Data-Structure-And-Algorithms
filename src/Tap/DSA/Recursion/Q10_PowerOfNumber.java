@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 // Power of Number
-public class PowerOfNumber {
+public class Q10_PowerOfNumber {
     public static void main(String[] args) {
         System.out.println(powerOf(2, 3));
     }
