@@ -1,7 +1,7 @@
 package Tap.DSA.Recursion;
 
 // reverse number
-public class Q1Reverse {
+public class Q1_Reverse {
     public static void main(String[] args) {
         int n = 10;
         fun(n);

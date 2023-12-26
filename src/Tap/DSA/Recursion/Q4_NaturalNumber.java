@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class NaturalNumber {
+public class Q4_NaturalNumber {
     public static void main(String[] args) {
       natural(5);
     }

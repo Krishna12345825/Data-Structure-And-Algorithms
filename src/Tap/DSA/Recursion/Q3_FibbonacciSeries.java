@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class FibbonacciSeries {
+public class Q3_FibbonacciSeries {
     public static void main(String[] args) {
         System.out.println(fibo(6));
     }

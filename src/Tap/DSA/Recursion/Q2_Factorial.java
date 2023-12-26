@@ -1,6 +1,6 @@
 package Tap.DSA.Recursion;
 
-public class Q2Factorial {
+public class Q2_Factorial {
     public static void main(String[] args) {
         System.out.println(factorial(5));
     }
