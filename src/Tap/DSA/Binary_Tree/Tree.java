@@ -26,19 +26,41 @@ public class Tree {
         root.left.right = new Node(50);
         root.right.right = new Node(60);
 
+        System.out.println("DFS/ (Depfth first search)/ InOrder Traversal reccurssion");
         inOrder(root);
         System.out.println();
+
+        System.out.println("DFS/ (Depfth first search)/ PreOrder Traversal reccurssion");
         preOrder(root);
         System.out.println();
+
+        System.out.println("DFS/ (Depfth first search)/ PostOrder Traversal reccurssion");
         postOrder(root);
         System.out.println();
+
+        System.out.println("DFS/ (Depfth first search)/  Height of nodes using reccursion");
         System.out.println(heightOf(root));
+        System.out.println();
+
+        System.out.println("DFS/ (Depfth first search)/ print Nodes at Distance k");
         printKDistance(root, 2);
         System.out.println();
+
+        System.out.println("BFS/ (Breadth first search)/ level order traversal");
         leveOrder(root);
         System.out.println();
+
+        System.out.println("Size of the Tree");
         System.out.println(size(root));
+        System.out.println();
+
+        System.out.println("DFS(Defth first search) / Maximum in Binary tree");
         System.out.println(max(root));
+        System.out.println();
+
+        System.out.println("Level Order Traversal_Line By Line (Approach1)");
+        levelOrderLineByLine(root);
+        System.out.println();
     }
 
 
@@ -134,7 +156,30 @@ public class Tree {
         }
     }
 
+//    Level Order Traversal_Line By Line (Approach1)
 
+    static void levelOrderLineByLine(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        if (root != null) {
+            q.add(root);
+            q.add(null);
+            while (q.size() > 1) {
+                Node current = q.poll();
+                if (current == null) {
+                    System.out.println();
+                    q.add(null);
+                } else {
+                    System.out.print(current.data + " ");
+                    if (current.left != null) {
+                        q.add(current.left);
+                    }
+                    if (current.right != null) {
+                        q.add(current.right);
+                    }
+                }
+            }
+        }
+    }
 
 
 }
