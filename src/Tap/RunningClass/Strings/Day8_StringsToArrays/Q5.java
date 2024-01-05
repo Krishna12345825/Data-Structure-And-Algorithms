@@ -56,5 +56,4 @@ public class Q5 {
         return arr;
     }
 
-
 }

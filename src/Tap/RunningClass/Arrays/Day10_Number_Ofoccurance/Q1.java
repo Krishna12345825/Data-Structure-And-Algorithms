@@ -23,14 +23,14 @@ public class Q1 {
             arr[i] = scanner.nextInt();
         }
         int k = scanner.nextInt();
-        int res = countOccurance(arr,k);
+        int res = countOccurance(arr, k);
         System.out.println(res);
     }
 
-    static int countOccurance(int arr[], int k){
+    static int countOccurance(int arr[], int k) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == k){
+            if (arr[i] == k) {
                 count++;
             }
         }

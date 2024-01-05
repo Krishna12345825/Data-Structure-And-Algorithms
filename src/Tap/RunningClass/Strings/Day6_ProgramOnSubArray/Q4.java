@@ -8,6 +8,7 @@ import java.util.Scanner;
 *input1:-   mississippi
 * input2:-  issi
 * output:-  2
+*
 * */
 public class Q4 {
     public static void main(String[] args) {

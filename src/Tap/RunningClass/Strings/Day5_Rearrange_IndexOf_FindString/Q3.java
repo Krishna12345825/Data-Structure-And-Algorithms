@@ -2,7 +2,7 @@ package Tap.RunningClass.Strings.Day5_Rearrange_IndexOf_FindString;
 
 import java.util.Scanner;
 
-/*  Given a String & character, print the index of the charecter
+/*  Given a String & character, print the index of the character
 * input:-s1 :-  matrix
 * input s2 :- r
 * output:- 3

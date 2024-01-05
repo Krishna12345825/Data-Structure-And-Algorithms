@@ -39,6 +39,4 @@ public class Q2 {
         }
         return true;
     }
-
-
 }

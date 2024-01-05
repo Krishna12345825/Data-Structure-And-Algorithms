@@ -6,7 +6,10 @@ import java.util.Scanner;
 /*  Input :-  How   are   you
    outPut:-  How
              are
-            you*/
+            you
+
+
+            */
 
 
 public class Q1 {

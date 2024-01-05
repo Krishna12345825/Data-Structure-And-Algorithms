@@ -37,8 +37,4 @@ public class Q3 {
         }
         return t;
     }
-
-
-
-
 }

@@ -11,6 +11,7 @@ input:-
 k = 7
 output:-
 3
+
 */
 
 

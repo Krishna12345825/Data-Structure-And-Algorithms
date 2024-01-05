@@ -10,6 +10,7 @@ import java.util.Scanner;
    2 3 3 3 4 5 7 7 9 11
    output:-
    7
+
 * */
 public class Q1 {
     public static void main(String[] args) {

@@ -55,6 +55,4 @@ public class Q7 {
         arr[j] = t;
         return arr;
     }
-
-
 }

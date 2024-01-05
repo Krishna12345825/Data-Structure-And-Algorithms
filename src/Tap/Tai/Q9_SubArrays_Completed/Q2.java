@@ -19,7 +19,6 @@ output:-
 
 public class Q2 {
 
-
     static void sumOfSizeK(int size, int arr[]){
         for (int i = 0; i <= arr.length - size; i++) {
             int sum = 0;

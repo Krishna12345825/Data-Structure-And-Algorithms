@@ -3,7 +3,7 @@ package Tap.RunningClass.Arrays.Day18_ProgramOnSubArrays;
 
 /*
 
-Given an array of size N, print the sum of all subarrays of given size
+Given an array of size N, print the sum of all subarrays of given size .
 input:-
 9
 5 1 2 4 9 3 1 3 3
