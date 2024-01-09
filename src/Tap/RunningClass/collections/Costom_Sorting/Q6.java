@@ -24,6 +24,7 @@ class MyCompare2 implements Comparator<Employee6>{
 
 class MyCompare1 implements Comparator<Employee6> {
     @Override
+
     public int compare(Employee6 e1, Employee6 e2) {
         String name1 = e1.getName();
         String name2 = e2.getName();
@@ -125,7 +126,7 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
         MyCompare1 compare1 = new MyCompare1();
 //        MyCompare2 compare1 = new MyCompare2();
-        TreeSet<Employee6> treeSet = new TreeSet<Employee6>(compare1);
+        TreeSet<Employee6> treeSet = new TreeSet<Employee6>();
 //        ArrayList<Employee6> treeSet = new ArrayList<>();
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {

@@ -1,5 +1,7 @@
 package Tap.RunningClass.collections.Map_Set;
 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -11,9 +13,9 @@ public class Q4 {
 
     static String removeDuplicates(String s) {
 
-//        HashSet<Character> set = new HashSet<>();
+        HashSet<Character> set = new HashSet<>();
 //        LinkedHashSet<Character> set = new LinkedHashSet<>();
-        TreeSet<Character> set = new TreeSet<>();
+//        TreeSet<Character> set = new TreeSet<>();
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);

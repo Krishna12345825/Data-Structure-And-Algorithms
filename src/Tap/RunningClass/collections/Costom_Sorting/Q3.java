@@ -6,17 +6,16 @@ import java.util.Scanner;
 class Employee3{
     private int id;
     private String name;
-    private String Department;
+    private String department;
     private int salary;
 
     public Employee3(){
-
     }
 
     public Employee3(int id, String name, String department, int salary) {
         this.id = id;
         this.name = name;
-        Department = department;
+        this.department = department;
         this.salary = salary;
     }
 
@@ -37,11 +36,11 @@ class Employee3{
     }
 
     public String getDepartment() {
-        return Department;
+        return department;
     }
 
     public void setDepartment(String department) {
-        Department = department;
+        this.department = department;
     }
 
     public int getSalary() {
@@ -65,7 +64,7 @@ class Employee3{
 
     @Override
     public String toString() {
-        return "( "+id + ", " + name + ", " + Department + ", " + salary + " )";
+        return "( "+id + ", " + name + ", " + department + ", " + salary + " )";
     }
 }
 public class Q3 {

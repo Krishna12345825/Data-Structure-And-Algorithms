@@ -35,6 +35,7 @@ class Employee4 implements  Comparable<Employee4>{
         this.name = name;
     }
 
+
     public String getDepartment() {
         return Department;
     }
@@ -62,15 +63,17 @@ class Employee4 implements  Comparable<Employee4>{
 //                '}';
 //    }
 
+
+
     @Override
     public int compareTo(Employee4 e2) {
         Employee4 e1 = this;
         int sal1 = e1.Salary;
         int sal2 = e2.Salary;
 
-//        return sal1 - sal2;
+        return sal1 - sal2;
 
-        return sal2 - sal1;
+//        return sal2 - sal1;
 
 //        if (sal1 == sal2 ){
 //            return 0;
