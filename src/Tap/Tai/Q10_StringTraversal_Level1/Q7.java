@@ -1,6 +1,16 @@
 package Tap.Tai.Q10_StringTraversal_Level1;
 
 import java.util.Scanner;
+/*
+
+Reverse String
+
+input:
+Krishna
+output:
+anhsirk
+
+*/
 
 public class Q7 {
     public static void main(String []args){
