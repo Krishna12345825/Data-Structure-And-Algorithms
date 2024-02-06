@@ -23,9 +23,9 @@ output2:-
 */
 
 
-import java.util.Scanner;
+import java.util.*;
 
-public class Q4not {
+public class Q4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n1 = scanner.nextInt();
@@ -43,21 +43,31 @@ public class Q4not {
     }
 
     static void repeatingEvenElements(int arr1[], int arr2[]){
-        int i = 0;
-        int j = 0;
-        while (i < arr1.length && j < arr2.length){
-            if (arr1[i]%2==0 && arr2[j]%2==0){
-                if (arr1[i] == arr2[j]){
-                    System.out.print(arr1[i] + " ");
-                }
-                i++;
-                j++;
-            } else if (arr1[i] < arr2[j]) {
-                i++;
-            }else {
-                j++;
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        for(int arr : arr1){
+            set1.add(arr);
+        }
+        for (int arr : arr2){
+            set2.add(arr);
+        }
+
+        Set<Integer> sets = new HashSet<>(set1);
+        sets.retainAll(set2);
+
+        int []resultArray = sets.stream().filter(arr -> arr %2 ==0).mapToInt(Integer :: intValue).toArray();
+        Arrays.sort(resultArray);
+
+        for (int i = 0; i < resultArray.length; i++) {
+            System.out.println(resultArray[i]);
+            if (i < resultArray.length - 1){
+                System.out.print(" ");
             }
         }
+
+
+
     }
 
 
