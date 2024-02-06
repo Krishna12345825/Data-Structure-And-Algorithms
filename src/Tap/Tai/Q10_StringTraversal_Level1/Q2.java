@@ -1,11 +1,22 @@
 package Tap.Tai.Q10_StringTraversal_Level1;
 
 import java.util.Scanner;
+/*
+String Length finder
+
+input:
+Hello World!
+12
+
+
+
+*/
+
 
 public class Q2 {
     public static void main(String []args){
         Scanner scanner = new Scanner(System.in);
-        String s = scanner.next();
+        String s = scanner.nextLine();
         findLength(s);
     }
 
