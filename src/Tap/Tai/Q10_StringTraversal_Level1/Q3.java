@@ -1,6 +1,18 @@
 package Tap.Tai.Q10_StringTraversal_Level1;
 
 import java.util.Scanner;
+/*
+
+String Cancatenator
+
+input1:
+krishna
+Kumar
+output:
+krishnaKumar
+*/
+
+
 
 public class Q3 {
     public static void main(String []args){
