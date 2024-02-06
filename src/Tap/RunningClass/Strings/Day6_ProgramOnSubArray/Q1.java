@@ -20,6 +20,7 @@ public class Q1 {
                 t = t + s.charAt(j);
             }
             System.out.println(t);
+            return;
         }
     }
 

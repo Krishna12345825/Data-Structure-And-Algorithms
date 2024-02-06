@@ -114,10 +114,6 @@ class Employee6 implements Comparable<Employee6> {
         }else {
             return e1.id - e2.id;
         }
-
-
-
-
     }
 }
 

@@ -21,6 +21,7 @@ package Tap.Tai.Q5_ArrayTraversalV2;
         10 20 30 40 50 60 70
         Sample Output 2
         40 50 60 70
+
    */
 
 import java.util.Scanner;
