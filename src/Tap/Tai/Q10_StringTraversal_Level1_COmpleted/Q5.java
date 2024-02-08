@@ -1,4 +1,4 @@
-package Tap.Tai.Q10_StringTraversal_Level1;
+package Tap.Tai.Q10_StringTraversal_Level1_COmpleted;
 /*
 
 Odd Index Character Printer
