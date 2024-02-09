@@ -1,4 +1,4 @@
-package Tap.Tai.Q11_StringTraversal_Level2;
+package Tap.Tai.Q11_StringTraversal_Level2_Completed;
 /*
 
 Remove spaces from a String

@@ -1,28 +1,27 @@
-package Tap.Tai.Q11_StringTraversal_Level2;
+package Tap.Tai.Q11_StringTraversal_Level2_Completed;
 
+import java.util.Scanner;
 /*
 
 UpperCase ASCII check
 
 input1:
-100
+78
 output:
 yes
 
 */
 
 
-import java.util.Scanner;
-
-public class Q3 {
+public class Q2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        lowerCaseAsciiCheck(n);
+        upperCaseAsciiCheck(n);
     }
 
-    static void lowerCaseAsciiCheck(int n){
-        if (n >= 97 && n<= 122){
+    static void upperCaseAsciiCheck(int n){
+        if (n >= 65 && n<= 90){
             System.out.println("Yes");
         }else {
             System.out.println("No");
