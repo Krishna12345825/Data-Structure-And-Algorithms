@@ -11,29 +11,17 @@ public class Q18 {
 
 
     static String longestPalindromicSubstring(String s) {
-
         String longestPalindrome = "";
-
         for (int i = 0; i < s.length(); i++) {
-
             for (int j = i + 1; j <= s.length(); j++) {
-
                 String substr = s.substring(i, j);
-
                 if (palindrome (substr) && substr.length() >
-
                         longestPalindrome.length()) {
-
                     longestPalindrome = substr;
-
                 }
-
             }
-
         }
-
         return longestPalindrome;
-
     }
 
     static boolean  palindrome(String s){
