@@ -120,7 +120,7 @@ class Employee6 implements Comparable<Employee6> {
 public class Q6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MyCompare1 compare1 = new MyCompare1();
+       // MyCompare1 compare1 = new MyCompare1();
 //        MyCompare2 compare1 = new MyCompare2();
         TreeSet<Employee6> treeSet = new TreeSet<Employee6>();
 //        ArrayList<Employee6> treeSet = new ArrayList<>();

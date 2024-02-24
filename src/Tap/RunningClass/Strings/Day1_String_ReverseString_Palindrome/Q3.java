@@ -8,11 +8,11 @@ public class Q3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        String ans = palindrome(input);
-        System.out.println(ans);
+
+        System.out.println(palindrome(input));
     }
 
-    static String  palindrome(String s){
+    static boolean  palindrome(String s){
         int i = 0;
         int j = s.length()-1;
         while (i <= j){
@@ -20,10 +20,10 @@ public class Q3 {
              i++;
              j--;
          }else {
-             return "Non - Palindrome";
+             return false;
          }
         }
-        return "Palindrome";
+        return true;
     }
 
 }
