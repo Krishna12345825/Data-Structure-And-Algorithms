@@ -4,7 +4,6 @@ public class Q18 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-
         String s = longestPalindromicSubstring(input);
         System.out.println(s);
     }

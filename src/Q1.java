@@ -3,52 +3,33 @@ import java.util.Scanner;
 public class Q1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        int input = scanner.nextInt();
+       printN(input);
 
-       String s = longestPalindromicSubstring(input);
-        System.out.println(s);
     }
 
-
-
-    static String longestPalindromicSubstring(String s) {
-
-        String longestPalindrome = "";
-
-        for (int i = 0; i < s.length(); i++) {
-
-            for (int j = i + 1; j <= s.length(); j++) {
-
-                String substr = s.substring(i, j);
-
-                if (palindrome (substr) && substr.length() >
-
-                        longestPalindrome.length()) {
-
-                    longestPalindrome = substr;
-
-                }
-
+    public static void printN(int n ){
+        for (int i = 0; i <=n; i++) {
+            if (isPalindrome(i)){
+                System.out.println(i);
             }
+        }
+    }
 
+    public static boolean isPalindrome(int n){
+        if(n <=1){
+            return false;
         }
 
-        return longestPalindrome;
-
-    }
-
-    static boolean  palindrome(String s){
-        int i = 0;
-        int j = s.length()-1;
-        while (i <= j){
-            if (s.charAt(i) == s.charAt(j)){
-                i++;
-                j--;
-            }else {
+        for (int i = 2; i <=Math.sqrt(n); i++) {
+            if (n % 2 == 0){
                 return false;
             }
         }
         return true;
+
     }
+
+
 
 }
