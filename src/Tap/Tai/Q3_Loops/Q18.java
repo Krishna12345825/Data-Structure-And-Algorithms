@@ -15,8 +15,7 @@ public class Q18 {
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j <= s.length(); j++) {
                 String substr = s.substring(i, j);
-                if (palindrome (substr) && substr.length() >
-                        longestPalindrome.length()) {
+                if (palindrome (substr) && substr.length() > longestPalindrome.length()) {
                     longestPalindrome = substr;
                 }
             }
