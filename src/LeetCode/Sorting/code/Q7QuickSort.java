@@ -27,6 +27,7 @@ public class Q7QuickSort {
             while (nums[e] > pivot) {
                 e--;
             }
+
             if (s <= e) {
                 int temp = nums[s];
                 nums[s] = nums[e];
@@ -35,6 +36,7 @@ public class Q7QuickSort {
                 e--;
             }
         }
+
         // now my pivot is at correct index, please sort two  halves now
         sort1(nums, low, e);
         sort1(nums, s, hi);

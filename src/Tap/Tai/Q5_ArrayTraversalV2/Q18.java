@@ -37,6 +37,7 @@ public class Q18 {
     }
 
     static void reverseEvenArray(int arr[]){
+
         int start = 0;
         int end = arr.length-1;
         while (start < end){

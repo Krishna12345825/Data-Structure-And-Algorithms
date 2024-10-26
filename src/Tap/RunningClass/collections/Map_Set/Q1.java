@@ -11,8 +11,7 @@ public class Q1 {
 //        LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
         TreeMap<String, Integer> map = new TreeMap<String, Integer>();
 
-
-        map.put("india", 900);
+        map.put("india", 100);
         map.put("china", 9700);
         map.put("usa", 8900);
         map.put("uk", 8769);
@@ -25,11 +24,19 @@ public class Q1 {
 
 
 
-/*      Set<Map.Entry<String, Integer>>  entrys = map.entrySet();
+/*
+
+ Set<Map.Entry<String, Integer>>  entrys = map.entrySet();
       for (Map.Entry<String, Integer> e : entrys){
 //          System.out.println(e);
           System.out.println(e.getKey() + " : " + e.getValue());
-      }*/
+      }
+
+*/
+
+
+
+
 
 
         Set<String> keys = map.keySet();
@@ -37,6 +44,7 @@ public class Q1 {
             Integer value = map.get(key);
             System.out.println(key + " : " + value);
         }
+
 
 
     }

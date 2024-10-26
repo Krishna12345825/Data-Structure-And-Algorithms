@@ -13,9 +13,9 @@ public class Q4 {
 
     static String removeDuplicates(String s) {
 
-        HashSet<Character> set = new HashSet<>();
-//        LinkedHashSet<Character> set = new LinkedHashSet<>();
-//        TreeSet<Character> set = new TreeSet<>();
+       // HashSet<Character> set = new HashSet<>();
+     //   LinkedHashSet<Character> set = new LinkedHashSet<>();
+        TreeSet<Character> set = new TreeSet<>();
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);

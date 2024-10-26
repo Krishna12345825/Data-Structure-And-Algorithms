@@ -9,7 +9,6 @@ public class Q18 {
     }
 
 
-
     static String longestPalindromicSubstring(String s) {
         String longestPalindrome = "";
         for (int i = 0; i < s.length(); i++) {

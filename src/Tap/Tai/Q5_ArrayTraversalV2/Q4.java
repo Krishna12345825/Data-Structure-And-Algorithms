@@ -40,10 +40,8 @@ public class Q4 {
         int min = arr[0];
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min){
+            if (arr[i] <= min){
                 min = arr[i];
-                count = 1;
-            } else if (arr[i] ==min) {
                 count++;
             }
         }

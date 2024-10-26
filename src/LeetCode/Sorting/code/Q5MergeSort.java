@@ -24,10 +24,15 @@ public class Q5MergeSort {
 
     //2. second step
     public static int[] merge(int first[], int second[]) {
+
         int[] mix = new int[first.length + second.length];
+
         int i = 0;
         int j = 0;
         int k = 0;
+
+
+
         while (i < first.length && j < second.length) {
             if (first[i] < second[j]) {
                 mix[k] = first[i];
@@ -38,6 +43,8 @@ public class Q5MergeSort {
             }
             k++;
         }
+
+
         // it may be possible that one of the array is not complete
         // copy the remaining elements
         while (i < first.length) {
