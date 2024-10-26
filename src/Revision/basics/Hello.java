@@ -1,8 +1,18 @@
 package Revision.basics;
+ class Calculater{
+    public int calculator(int n1, int n2){
+        return n1+ n2;
+    }
+}
 
 public class Hello {
     public static void main(String args[]){
-        System.out.println("Hello Krishna , From Today im going to revised ");
+        Calculater calculater = new Calculater();
+       int ans =  calculater.calculator(120, 230);
+        System.out.println(ans);
+
+       /*
+       System.out.println("Hello Krishna , From Today im going to revised ");
         int n1 = 12;
         int n2 = 12;
         System.out.println(n1 + n2);
@@ -61,6 +71,7 @@ public class Hello {
             System.out.print(y+" ");
             y++;
         }while (y<=10);
+        */
 
     }
 }
