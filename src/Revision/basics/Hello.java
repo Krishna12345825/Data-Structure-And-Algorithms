@@ -1,94 +1,27 @@
-package Revision.basics;
- class Calculater{
-    public int calculator(int n1, int n2){
-        return n1+ n2;
-    }
-}
+import java.util.Scanner;
 
 public class Hello {
-    public static void main(String args[]){
-        Calculater calculater = new Calculater();
-       int ans =  calculater.calculator(120, 230);
-        System.out.println(ans);
-
-       /*
-       System.out.println("Hello Krishna , From Today im going to revised ");
-        int n1 = 12;
-        int n2 = 12;
-        System.out.println(n1 + n2);
-
-        int num1=9;
-        byte by=127;
-        short sh=558;
-        long l=5854l;
-
-        float f=5.8f;
-        double d=5.8;
-
-        char c='k';
-
-        boolean b=true;
-        System.out.println(b);
-
-
-        byte b1=127;
-        int a=b1;
-        System.out.println(b);
-        System.out.println(a);
-
-        byte b11=125;
-        int a0=b11;
-        System.out.println(b11);
-        System.out.println(a0);
-
-        int aa=257;
-        byte k=(byte)aa;
-
-        float f1=5.6f;
-        int t=(int)f1;
-
-        int a2=2567;
-        byte b2=(byte)a2;
-        System.out.println(k);
-
-        byte a3=10;
-        byte b4=20;
-        int t4=a3*b4;
-        System.out.println(t4);
-
-        for(int i = 0; i<12; i++){
-            System.out.print(i+" ");
+    public static void main(String args[]) {
+        System.out.println("Enter Numbers");
+        System.out.println("Krishna ");
+        Scanner scanner = new Scanner(System.in);
+        int n  = scanner.nextInt();
+        int arr[]  = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
         }
-        System.out.println();
-        int  x = 1;
-        while (x <10){
-            System.out.print(x+ "  ");
-            x++;
-        }
-        System.out.println();
-        int y = 1;
-        do {
-            System.out.print(y+" ");
-            y++;
-        }while (y<=10);
-        */
+        evenNumberArray(n, arr);
 
     }
+
+    static void evenNumberArray(int n, int arr[]){
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % 2 == 0){
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+
+
+
 }
-
-
-/*
-
-    For loop:-
-        If you know how many iterations you want to go for loop
-        (intiliazing vaue, condition, increment or decrement)
-
-        While loop:-
-        When you need to read the file go for while loop, if the number of iterations is not known.
-
-        - For loop can also be used as a while.
-
-        Do While Loop:-
-        If you condition get false but you want to exceute the code at least once.
-
-*/
