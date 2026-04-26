@@ -23,6 +23,10 @@ public class ConcatenationOfArray {
 }
 
 /*
+
+https://leetcode.com/problems/concatenation-of-array/
+
+
 Concatenation of Array
 
 You are given an integer array nums of length n. Create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
