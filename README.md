@@ -2,8 +2,8 @@
 All topic cover dsa
 Basic to Advance Data Structures
 # Arrays and Hashing Question neetcode sheets
- - 1 [Concatenation of Array] ( https://leetcode.com/problems/concatenation-of-array/description/)
- - 2 [Contains Duplicate ] (  https://leetcode.com/problems/contains-duplicate/description/)
+ - 1 [Concatenation of Array]( https://leetcode.com/problems/concatenation-of-array/description/)
+ - 2 [Contains Duplicate ](  https://leetcode.com/problems/contains-duplicate/description/)
 
 # Arrays  Questions
 - # Basics Question Arrays
